@@ -5,7 +5,8 @@
 nav {
   font-size: $font-size--sm;
 }
-.nav--sec{
+// Secondary menu located under the header section
+.nav--sec {
   display:flex;
   margin: em(40px) 0 em(80px) 0;
   flex-wrap: wrap;
@@ -20,6 +21,7 @@ nav {
   }
 }
 
+// Start of the Hamburger menu and main nav section located in header
 #menuToggle {
   display: block;
   position: relative;
@@ -107,7 +109,6 @@ nav {
   width:360px;
   position: absolute;
   display: none;
-  flex-direction: column;
   right:-70px;
   height:100vh;
   margin-top: -50px;
@@ -117,7 +118,17 @@ nav {
   opacity:0;
   -webkit-font-smoothing: antialiased;
   transition: all $trns-duration ease-in;
-
+  @include e('list'){
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-between;
+  }
+  @include m('left') {
+    flex-direction: row;
+    justify-content: flex-end;
+    border-top:1px solid $color--border;
+  }
 }
 
 .menu .nav-item {
@@ -125,11 +136,11 @@ nav {
   padding: em(15px);
 }
 
-/*
- * And let's slide it in from the left
- */
+// After input is checked
 #menuToggle input:checked ~ nav {
   display: flex;
-  align-items: flex-end;
+  flex-direction: column;
+
+  justify-content: space-between;
   opacity: 1;
 }
