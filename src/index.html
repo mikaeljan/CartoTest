@@ -8,36 +8,49 @@
 </head>
 <body>
 
-    <header class="header__main">
-        <div class="header__logo">
-            <img class="logo" alt="logo">
-        </div>
+<header class="header__main">
+    <div class="header__logo">
+        <img class="logo" alt="logo">
+    </div>
+    <nav role="navigation">
+        <div id="menuToggle">
+            <!--
+            A fake / hidden checkbox is used as click reciever,
+            so you can use the :checked selector on it.
+            -->
+            <input type="checkbox" />
 
-        <div class="menu-container">
-            <!-- This checkbox will give us the toggle behavior, it will be hidden, but functional -->
-            <input id="toggle" type="checkbox">
-            <!-- IMPORTANT: Any element that we want to modify when the checkbox state changes go here, being "sibling" of the checkbox element -->
-            <!-- This label is tied to the checkbox, and it will contain the toggle "buttons" -->
-            <label class="toggle-container" for="toggle">
-                <!-- If menu is open, it will be the "X" icon, otherwise just a clickable area behind the hamburger menu icon -->
-                <span class="button button-toggle"></span>
-            </label>
-            <!-- The nav menu -->
-            <nav class="nav nav-prim">
+            <!--
+            Some spans to act as a hamburger.
+
+            They are acting like a real hamburger,
+            not that McDonalds stuff.
+            -->
+            <span></span>
+            <span></span>
+            <span></span>
+
+            <!--
+            Too bad the menu has to be inside of the button
+            but hey, it's pure CSS magic.
+            -->
+            <nav class="menu">
                 <a class="nav-item" href="">Builder</a>
                 <a class="nav-item" href="">Engine</a>
                 <a class="nav-item" href="">Solutions</a>
                 <a class="nav-item" href="">Pricing</a>
                 <a class="nav-item" href="">Blog</a>
-
                 <div>
                     <a class="nav-item" href="">Login</a>
                     <a class="nav-item" href="">Contact us</a>
                 </div>
-
             </nav>
         </div>
-    </header>
+    </nav>
+
+
+
+</header>
     <div class="wrapper">
         <nav class="nav--sec">
             <a class="nav__item active" href="">Documentation</a>

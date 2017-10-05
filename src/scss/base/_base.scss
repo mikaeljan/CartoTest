@@ -8,8 +8,8 @@
 body {
   font-size: $font-size--md;
   font-family: $font-family--primary;
-  color: $color--prim;
   background-color: $color--bg--light;
+  color: $color--prim;
 }
 
 h1,
@@ -18,6 +18,7 @@ h3,
 p {
   margin:0;
 }
+
 a {
   text-decoration: none;
 }

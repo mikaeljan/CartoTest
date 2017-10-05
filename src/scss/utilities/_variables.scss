@@ -65,6 +65,14 @@ $br--round    : 50%;
 $trns-duration  : .5s;
 $trns-delay     : .05s;
 
+//Grid variables
+
+$g-col-basis    : 8.333;
+$g-gutter-width : 20px;
+$g-col-count    : 12;
+$g-cont-max-w   : 1050px;
+
+
 //Breakpoints
 $brkpoint--xs    : 420px;
 $brkpoint--sm    : 576px;

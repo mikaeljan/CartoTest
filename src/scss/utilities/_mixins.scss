@@ -44,3 +44,16 @@
     @error "Whoops! No value could be retrieved for `#{$break}`. "
   }
 }
+
+// Grid Cols
+
+@mixin g-width {
+  @for $i from 1 through $g-col-count {
+    &--#{$i}{
+
+      flex-basis:percentage(($g-col-basis * $i)/100);
+      //flex-basis: $g-col-basis;
+      //@include flex-grow(#{$i});
+    }
+  }
+}

@@ -5,8 +5,8 @@
 body {
   font-size: 18px;
   font-family: "Montserrat", Helvetica, Arial, sans-serif;
-  color: #162745;
-  background-color: #F9F9F9; }
+  background-color: #F9F9F9;
+  color: #162745; }
 
 h1,
 h2,
@@ -470,14 +470,14 @@ header {
   height: 4px;
   margin-bottom: 5px;
   position: relative;
-  background: #cdcdcd;
+  background: #162745;
   border-radius: 3px;
   z-index: 1;
-  transform-origin: 4px 0px;
+  transform-origin: 4px 0;
   transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease; }
 
 #menuToggle span:first-child {
-  transform-origin: 0% 0%; }
+  transform-origin: 0 0; }
 
 #menuToggle span:nth-last-child(2) {
   transform-origin: 0% 100%; }
@@ -508,7 +508,7 @@ header {
  * Make this absolute positioned
  * at the top left of the screen
  */
-#menu {
+.menu {
   color: #fff;
   position: absolute;
   display: flex;
@@ -527,22 +527,47 @@ header {
   transform: translate(250%, 0);
   transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1); }
 
-#menu li {
+.menu li {
   padding: 10px 0;
   font-size: 22px; }
 
-#menu a {
+.menu a {
   color: #fff; }
 
 /*
  * And let's slide it in from the left
  */
-#menuToggle input:checked ~ ul {
+#menuToggle input:checked ~ nav {
   transform: none; }
 
 .wrapper {
   min-height: 100vh;
   max-width: 940px;
   margin: auto; }
+
+.grid__col--1 {
+  flex-basis: 8.333%; }
+.grid__col--2 {
+  flex-basis: 16.666%; }
+.grid__col--3 {
+  flex-basis: 24.999%; }
+.grid__col--4 {
+  flex-basis: 33.332%; }
+.grid__col--5 {
+  flex-basis: 41.665%; }
+.grid__col--6 {
+  flex-basis: 49.998%; }
+.grid__col--7 {
+  flex-basis: 58.331%; }
+.grid__col--8 {
+  flex-basis: 66.664%; }
+.grid__col--9 {
+  flex-basis: 74.997%; }
+.grid__col--10 {
+  flex-basis: 83.33%; }
+.grid__col--11 {
+  flex-basis: 91.663%; }
+.grid__col--12 {
+  flex-basis: 99.996%; }
 
 /*# sourceMappingURL=style.css.map */
