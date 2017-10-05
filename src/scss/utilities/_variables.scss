@@ -1,0 +1,74 @@
+// ==========================================================================
+// Global variables
+// ==========================================================================
+
+// Font-stacks
+$font-url--google           : "https://fonts.googleapis.com/css?family=Montserrat:400,700|Open+Sans:400,600";
+$font-family--primary       : 'Montserrat', Helvetica, Arial, sans-serif;
+$font-family--secondary     : 'Open Sans', Helvetica, Arial, sans-serif;
+// Font Weights
+
+$font-weight--regular   : 400;
+$font-weight--bold      : 600;
+$font-weight--xbold     : 700;
+
+// Text sizes
+$font-size--sm  : 13px;
+$font-size--md     : 18px;
+$font-size--lg  : 32px;
+
+
+$text-title--md : 15px;
+$text-title--lg : $font-size--lg;
+
+$text-normal--md: $font-size--md;
+$text-normal--lg: 20px;
+
+//Colors
+  // Descriptive color variables
+$white          : #fff;
+$black          : #000;
+
+$alabaster      : #F9F9F9;
+$big-stone      : #162745;
+$nile-blue      : #1B3558;
+$pale-sky       : #647083;
+$azure-radiance : #1181FB;
+$cadet-blue     : #B1B8C1;
+$mantis         : #73C86B; // For small icons
+$sugar-cane     : #F6FFF5; // For infowindow
+
+// Functional color variables
+$color--prim         : $big-stone;
+$color--sec          : $pale-sky;
+$color--input        : $cadet-blue;
+
+$color--bg           : $white;
+$color--bg--light    : $alabaster;
+
+
+$color--link-default : $azure-radiance;
+$color--active       : $nile-blue;
+
+// Icon size
+$icon--sm : 25px;
+$icon--md : 40px;
+$icon--lg : 65px;
+
+// Border radius
+
+$br--default    : 0.4em;
+$br--round    : 50%;
+
+// Transitions
+
+$trns-duration  : .5s;
+$trns-delay     : .05s;
+
+//Breakpoints
+$brkpoint--xs    : 420px;
+$brkpoint--sm    : 576px;
+$brkpoint--md    : 768px;
+$brkpoint--lg    : 962px;
+$brkpoint--xl   : 1200px;
+

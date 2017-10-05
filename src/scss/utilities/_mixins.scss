@@ -1,0 +1,46 @@
+// ==========================================================================
+// Mixins
+// ==========================================================================
+// Element and Modifier BEM Selectors
+@mixin e($element) {
+  &__#{$element} {
+    @content;
+  }
+}
+@mixin m($modifier) {
+  &--#{$modifier} {
+    @content;
+  }
+}
+
+// Media queries
+@mixin mq($break) {
+  @if $break == "mobile-xs" {
+    @media (min-width: $brkpoint--xs) {
+      @content;
+    }
+  }
+  @else if $break == "mobile" {
+    @media (min-width: $brkpoint--sm) {
+      @content;
+    }
+  }
+  @else if $break == "tablet" {
+    @media (min-width: $brkpoint--md) {
+      @content;
+    }
+  }
+  @else if $break == "desktop" {
+    @media (min-width: $brkpoint--lg) {
+      @content;
+    }
+  }
+  @else if $break == "desktop-lg" {
+    @media (min-width: $brkpoint--xl) {
+      @content;
+    }
+  }
+  @else {
+    @error "Whoops! No value could be retrieved for `#{$break}`. "
+  }
+}
