@@ -1,6 +1,24 @@
 // ======================================
-//  Hamburger menu
+//  Nav menus/Hamburger menu
 // ======================================
+
+nav {
+  font-size: $font-size--sm;
+}
+.nav--sec{
+  display:flex;
+  margin: em(40px) 0 em(80px) 0;
+  flex-wrap: wrap;
+  border-bottom: 1px solid $color--border;
+  & .nav__item {
+    color: $color--sec;
+    margin-right: em(40px);
+    margin-bottom: em(20px);
+  &:last-child {
+    margin-right:0;
+   }
+  }
+}
 
 #menuToggle {
   display: block;
@@ -18,7 +36,7 @@
   height: 32px;
   position: absolute;
   top: -7px;
-  left: -5px;
+  left: 50px;
 
   cursor: pointer;
 
@@ -36,6 +54,7 @@
   height: 4px;
   margin-bottom: 5px;
   position: relative;
+  left: 50px;
   background: $color--prim;
   border-radius: 3px;
   z-index: 1;
@@ -51,7 +70,7 @@
 }
 
 #menuToggle span:nth-last-child(2) {
-  transform-origin: 0% 100%;
+  transform-origin: 0 100%;
 }
 
 /*
@@ -85,35 +104,32 @@
  */
 .menu {
   color: $white;
+  width:360px;
   position: absolute;
-  display:flex;
+  display: none;
   flex-direction: column;
-  width: 360px;
+  right:-70px;
   height:100vh;
-  left: -150px;
   margin-top: -50px;
-  padding: 50px;
   padding-top: 60px;
   background-color: rgba($black,.8);
   list-style-type: none;
+  opacity:0;
   -webkit-font-smoothing: antialiased;
-  /* to stop flickering of text in safari */
-  transform-origin: 0% 0%;
-  transform: translate(250%, 0);
-  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+  transition: all $trns-duration ease-in;
+
 }
 
-.menu li {
-  padding: 10px 0;
-  font-size: 22px;
-}
-.menu a {
+.menu .nav-item {
   color: $white;
+  padding: em(15px);
 }
 
 /*
  * And let's slide it in from the left
  */
 #menuToggle input:checked ~ nav {
-  transform: none;
+  display: flex;
+  align-items: flex-end;
+  opacity: 1;
 }

@@ -7,59 +7,58 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+<header>
+    <div class="wrapper">
+        <div class="header__main">
+            <div class="header__logo">
+                <img class="logo" alt="logo">
+            </div>
+            <nav role="navigation">
+                <div id="menuToggle">
+                    <!--
+                    A fake / hidden checkbox is used as click reciever,
+                    so you can use the :checked selector on it.
+                    -->
+                    <input type="checkbox" />
+                    <!--These will represent the hamburger icon-->
+                    <span></span>
+                    <span></span>
+                    <span></span>
 
-<header class="header__main">
-    <div class="header__logo">
-        <img class="logo" alt="logo">
-    </div>
-    <nav role="navigation">
-        <div id="menuToggle">
-            <!--
-            A fake / hidden checkbox is used as click reciever,
-            so you can use the :checked selector on it.
-            -->
-            <input type="checkbox" />
-
-            <!--
-            Some spans to act as a hamburger.
-
-            They are acting like a real hamburger,
-            not that McDonalds stuff.
-            -->
-            <span></span>
-            <span></span>
-            <span></span>
-
-            <!--
-            Too bad the menu has to be inside of the button
-            but hey, it's pure CSS magic.
-            -->
-            <nav class="menu">
-                <a class="nav-item" href="">Builder</a>
-                <a class="nav-item" href="">Engine</a>
-                <a class="nav-item" href="">Solutions</a>
-                <a class="nav-item" href="">Pricing</a>
-                <a class="nav-item" href="">Blog</a>
-                <div>
-                    <a class="nav-item" href="">Login</a>
-                    <a class="nav-item" href="">Contact us</a>
+                    <!--
+                    Too bad the menu has to be inside of the button
+                    but hey, it's pure CSS magic.
+                    -->
+                    <nav class="menu">
+                        <a class="nav-item" href="">Builder</a>
+                        <a class="nav-item" href="">Engine</a>
+                        <a class="nav-item" href="">Solutions</a>
+                        <a class="nav-item" href="">Pricing</a>
+                        <a class="nav-item" href="">Blog</a>
+                        <div>
+                            <a class="nav-item" href="">Login</a>
+                            <a class="nav-item" href="">Contact us</a>
+                        </div>
+                    </nav>
                 </div>
             </nav>
         </div>
-    </nav>
-
-
-
+    </div> <!--End wrapper-->
 </header>
+
     <div class="wrapper">
-        <nav class="nav--sec">
+        <nav class="nav--sec grid__col--12">
             <a class="nav__item active" href="">Documentation</a>
             <a class="nav__item" href="">Guides</a>
             <a class="nav__item" href="">Tutorials</a>
             <a class="nav__item" href="">Support</a>
         </nav>
-
     </div>
+    <div class="wrapper">
+        <h1 class="title">DOCUMENTATION</h1>
+        <p class="lead">Learn all about the CARTO Engine. An Open Source tool that enables you to use several APIs to build advanced, dynamic geospatial datasets and scalable maps for your own applications.</p>
+    </div>
+
 
 </body>
 </html>

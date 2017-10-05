@@ -7,9 +7,10 @@
 }
 body {
   font-size: $font-size--md;
-  font-family: $font-family--primary;
+  font-family: $font-family--prim;
   background-color: $color--bg--light;
   color: $color--prim;
+  line-height: $line-height;
 }
 
 h1,

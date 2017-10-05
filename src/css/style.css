@@ -1,22 +1,4 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat:400,700|Open+Sans:400,600");
-* {
-  box-sizing: border-box; }
-
-body {
-  font-size: 18px;
-  font-family: "Montserrat", Helvetica, Arial, sans-serif;
-  background-color: #F9F9F9;
-  color: #162745; }
-
-h1,
-h2,
-h3,
-p {
-  margin: 0; }
-
-a {
-  text-decoration: none; }
-
 /*! normalize.css v5.0.0 | MIT License | github.com/necolas/normalize.css */
 /**
  * 1. Change the default font family in all browsers (opinionated).
@@ -429,14 +411,63 @@ ul, ol {
   padding: 0;
   margin: 0; }
 
+* {
+  box-sizing: border-box; }
+
+body {
+  font-size: 18px;
+  font-family: "Montserrat", Helvetica, Arial, sans-serif;
+  background-color: #F9F9F9;
+  color: #162745;
+  line-height: 30px; }
+
+h1,
+h2,
+h3,
+p {
+  margin: 0; }
+
+a {
+  text-decoration: none; }
+
+.active {
+  font-weight: 600;
+  color: #1B3558; }
+
+.title {
+  margin: 0.8333333333em 0; }
+
+.lead {
+  font-family: "Open Sans", Helvetica, Arial, sans-serif; }
+
 header {
+  background-color: #fff;
+  border-bottom: 1px solid #EEEEEE; }
+
+.header__main {
   display: flex;
   justify-content: space-between;
   background-color: #fff;
-  align-items: flex-start; }
+  align-items: flex-start;
+  margin-bottom: 0.8333333333em; }
 
 .header__logo {
-  margin: 1.3888888889em; }
+  margin: 1.3888888889em 0 0; }
+
+nav {
+  font-size: 13px; }
+
+.nav--sec {
+  display: flex;
+  margin: 2.2222222222em 0 4.4444444444em 0;
+  flex-wrap: wrap;
+  border-bottom: 1px solid #EEEEEE; }
+  .nav--sec .nav__item {
+    color: #647083;
+    margin-right: 2.2222222222em;
+    margin-bottom: 1.1111111111em; }
+    .nav--sec .nav__item:last-child {
+      margin-right: 0; }
 
 #menuToggle {
   display: block;
@@ -453,7 +484,7 @@ header {
   height: 32px;
   position: absolute;
   top: -7px;
-  left: -5px;
+  left: 50px;
   cursor: pointer;
   opacity: 0;
   /* hide this */
@@ -470,6 +501,7 @@ header {
   height: 4px;
   margin-bottom: 5px;
   position: relative;
+  left: 50px;
   background: #162745;
   border-radius: 3px;
   z-index: 1;
@@ -480,7 +512,7 @@ header {
   transform-origin: 0 0; }
 
 #menuToggle span:nth-last-child(2) {
-  transform-origin: 0% 100%; }
+  transform-origin: 0 100%; }
 
 /*
  * Transform all the slices of hamburger
@@ -510,40 +542,36 @@ header {
  */
 .menu {
   color: #fff;
-  position: absolute;
-  display: flex;
-  flex-direction: column;
   width: 360px;
+  position: absolute;
+  display: none;
+  flex-direction: column;
+  right: -70px;
   height: 100vh;
-  left: -150px;
   margin-top: -50px;
-  padding: 50px;
   padding-top: 60px;
   background-color: rgba(0, 0, 0, 0.8);
   list-style-type: none;
+  opacity: 0;
   -webkit-font-smoothing: antialiased;
-  /* to stop flickering of text in safari */
-  transform-origin: 0% 0%;
-  transform: translate(250%, 0);
-  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1); }
+  transition: all 0.6s ease-in; }
 
-.menu li {
-  padding: 10px 0;
-  font-size: 22px; }
-
-.menu a {
-  color: #fff; }
+.menu .nav-item {
+  color: #fff;
+  padding: 0.8333333333em; }
 
 /*
  * And let's slide it in from the left
  */
 #menuToggle input:checked ~ nav {
-  transform: none; }
+  display: flex;
+  align-items: flex-end;
+  opacity: 1; }
 
 .wrapper {
-  min-height: 100vh;
   max-width: 940px;
-  margin: auto; }
+  margin: 0 auto;
+  padding: 0 1.3333333333em; }
 
 .grid__col--1 {
   flex-basis: 8.333%; }
