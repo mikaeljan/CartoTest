@@ -439,7 +439,8 @@ a {
 
 .lead {
   font-family: "Open Sans", Helvetica, Arial, sans-serif;
-  color: #647083; }
+  color: #647083;
+  margin: 1.3888888889em 0; }
 
 header {
   background-color: #fff;
@@ -447,16 +448,18 @@ header {
 
 .header__main {
   display: flex;
-  justify-content: space-between;
   background-color: #fff;
-  align-items: flex-start;
   margin-bottom: 0.8333333333em; }
 
 .header__logo {
   margin: 1.3888888889em 0 0; }
 
+.header__title {
+  align-self: flex-end; }
+
 nav {
-  font-size: 13px; }
+  font-size: 13px;
+  margin-left: auto; }
 
 .nav--sec {
   display: flex;
@@ -484,7 +487,7 @@ nav {
   width: 40px;
   height: 32px;
   position: absolute;
-  top: -7px;
+  top: 15px;
   left: 50px;
   cursor: pointer;
   opacity: 0;
@@ -502,6 +505,7 @@ nav {
   height: 4px;
   margin-bottom: 5px;
   position: relative;
+  top: 15px;
   left: 50px;
   background: #162745;
   border-radius: 3px;
@@ -615,6 +619,11 @@ nav {
   border: 1px solid #ddd;
   box-shadow: 0 1px 0 rgba(0, 0, 0, 0.3) inset; }
 
+.header__logo {
+  width: 40px;
+  height: 40px;
+  margin-left: -8px; }
+
 .icon--arrow {
   padding: 0.1111111111em;
   width: 10px;
@@ -658,7 +667,7 @@ nav {
     font-size: 13px;
     border-radius: 0.2em;
     margin-left: auto;
-    padding: 0.5555555556em 1.3888888889em;
+    padding: 0.2777777778em 1.3888888889em;
     background-color: #DDDDDD; }
 
 /*# sourceMappingURL=style.css.map */

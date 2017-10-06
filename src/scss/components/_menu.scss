@@ -4,6 +4,8 @@
 
 nav {
   font-size: $font-size--sm;
+  margin-left:auto;
+
 }
 // Secondary menu located under the header section
 .nav--sec {
@@ -37,7 +39,7 @@ nav {
   width: 40px;
   height: 32px;
   position: absolute;
-  top: -7px;
+  top: 15px;
   left: 50px;
 
   cursor: pointer;
@@ -56,6 +58,7 @@ nav {
   height: 4px;
   margin-bottom: 5px;
   position: relative;
+  top:15px;
   left: 50px;
   background: $color--prim;
   border-radius: 3px;
