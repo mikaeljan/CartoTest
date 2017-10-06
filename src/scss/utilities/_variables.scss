@@ -5,7 +5,7 @@
 // Font-stacks
 $font-url--google           : "https://fonts.googleapis.com/css?family=Montserrat:400,700|Open+Sans:400,600";
 $font-family--prim          : 'Montserrat', Helvetica, Arial, sans-serif;
-$font-family--sec         : 'Open Sans', Helvetica, Arial, sans-serif;
+$font-family--sec           : 'Open Sans', Helvetica, Arial, sans-serif;
 
 // Font Weights
 
@@ -15,16 +15,19 @@ $font-weight--xbold     : 700;
 
 // Text sizes
 
-$font-size--sm      : 13px;
-$font-size--md      : 18px;
-$font-size--lg      : 32px;
+$font-size--sm        : 13px;
+$font-size--md        : 18px;
+$font-size--lg        : 26px;
+$font-size--xlg       : 32px;
 
 $line-height        : 30px;
 
-$text-title--md     : 15px;
+$text-title--sm     : 15px;
+$text-title--md     : $font-size--md;
 $text-title--lg     : $font-size--lg;
 
-$text-normal--md    : $font-size--md;
+$text-normal--sm    : $font-size--sm;
+$text-normal--md    : 15px;
 $text-normal--lg    : 20px;
 
 //Colors

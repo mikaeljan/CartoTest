@@ -1,23 +1,21 @@
 // ======================================
 //  Nav menus/Hamburger menu
 // ======================================
-
 nav {
   font-size: $font-size--sm;
   margin-left:auto;
-  @include mq("tablet"){
-  }
-
 }
+
 // Secondary menu located under the header section
 .nav--sec {
   display:flex;
-  margin: em(40px) 0 em(80px) 0;
+  margin: 0 0 em(120px) 0;
   flex-wrap: wrap;
   border-bottom: 1px solid $color--border;
   & .nav__item {
     color: $color--sec;
     margin-right: em(40px);
+    margin-top:em(20px);
     margin-bottom: em(20px);
   &:last-child {
     margin-right:0;
@@ -29,7 +27,7 @@ nav {
 #menuToggle {
   display: block;
   position: relative;
-  top: 20px;
+  top: 6px;
   left: -50px;
   z-index: 1;
   -webkit-user-select: none;

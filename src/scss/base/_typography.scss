@@ -1,17 +1,29 @@
 // ==========================================================================
-// Base
+// General typography
 // ==========================================================================
-
 .active {
   font-weight: $font-weight--bold;
   color:$color--active;
 }
 
-.title {
-  margin: em(15px) 0;
+.title,
+.article__title {
+  @extend %title;
 }
-.lead {
-  font-family: $font-family--sec;
-  color: $color--sec;
-  margin: em(25px) 0;
+.article__title {
+  @include mq("tablet") {
+    font-size: $text-title--md;
+  }
+}
+.desc,
+.article__desc {
+  @extend %desc;
+}
+.desc {
+  @include mq("tablet") {
+    font-size:$text-normal--lg ;
+  }
+}
+.article__card--text {
+  font-size: $text-normal--md;
 }

@@ -23,11 +23,19 @@
     }
   }
   @include m("search"){
+    visibility: hidden;
     width:$icon--sm;
     height: $icon--sm;
     position: relative;
-    top:3px;
     left: -50px;
+    @include mq("mobile-xs"){
+      visibility: visible;
+      top:6px;
+    }
+    @include mq("tablet"){
+      visibility: visible;
+      top:3px;
+    }
     & .path{
       fill: $color--input;
     }

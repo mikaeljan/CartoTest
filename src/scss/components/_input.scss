@@ -1,14 +1,17 @@
 // ======================================
 //  Layout Imports
 // ======================================
-
 .input--search {
   font-family: $font-family--sec;
   border-radius: $br--default;
   -webkit-appearance: none;
-  font-size: $font-size--md;
+  font-size: $font-size--sm;
   padding: em(15px);
   width: 60%;
+  max-width: 450px;
   border: 1px solid #ddd;
   box-shadow: 0 1px 0 rgba(0,0,0,.3) inset;
+  @include mq("tablet"){
+    font-size: $font-size--md;
+  }
 }

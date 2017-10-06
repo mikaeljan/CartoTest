@@ -1,4 +1,27 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat:400,700|Open+Sans:400,600");
+a {
+  color: #1181FB;
+  text-decoration: none; }
+
+.title,
+.article__title {
+  font-size: 18px; }
+  @media (min-width: 768px) {
+    .title,
+    .article__title {
+      font-size: 26px; } }
+
+.desc,
+.article__desc {
+  font-size: 13px;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  color: #647083;
+  margin: 0.8333333333em 0; }
+  @media (min-width: 768px) {
+    .desc,
+    .article__desc {
+      font-size: 15px; } }
+
 /*! normalize.css v5.0.0 | MIT License | github.com/necolas/normalize.css */
 /**
  * 1. Change the default font family in all browsers (opinionated).
@@ -422,29 +445,29 @@ body {
   line-height: 30px; }
 
 h1,
-h2,
-h3,
 p {
   margin: 0; }
-
-a {
-  text-decoration: none; }
 
 .active {
   font-weight: 600;
   color: #1B3558; }
 
-.title {
-  margin: 0.8333333333em 0; }
+@media (min-width: 768px) {
+  .article__title {
+    font-size: 18px; } }
 
-.lead {
-  font-family: "Open Sans", Helvetica, Arial, sans-serif;
-  color: #647083;
-  margin: 1.3888888889em 0; }
+@media (min-width: 768px) {
+  .desc {
+    font-size: 20px; } }
+
+.article__card--text {
+  font-size: 15px; }
 
 header {
   background-color: #fff;
   border-bottom: 1px solid #EEEEEE; }
+  header .wrapper {
+    margin-bottom: 0px; }
 
 .header__main {
   display: flex;
@@ -457,7 +480,7 @@ header {
       display: flex; } }
 
 .header__logo {
-  margin: 1.3888888889em 0 0; }
+  margin: 0.5555555556em 0 0; }
 
 .header__title {
   align-self: flex-end; }
@@ -468,12 +491,13 @@ nav {
 
 .nav--sec {
   display: flex;
-  margin: 2.2222222222em 0 4.4444444444em 0;
+  margin: 0 0 6.6666666667em 0;
   flex-wrap: wrap;
   border-bottom: 1px solid #EEEEEE; }
   .nav--sec .nav__item {
     color: #647083;
     margin-right: 2.2222222222em;
+    margin-top: 1.1111111111em;
     margin-bottom: 1.1111111111em; }
     .nav--sec .nav__item:last-child {
       margin-right: 0; }
@@ -481,7 +505,7 @@ nav {
 #menuToggle {
   display: block;
   position: relative;
-  top: 20px;
+  top: 6px;
   left: -50px;
   z-index: 1;
   -webkit-user-select: none;
@@ -615,8 +639,8 @@ nav {
       flex-direction: row; } }
 
 .wrapper {
-  max-width: 940px;
-  margin: 0 auto;
+  max-width: 1024px;
+  margin: 0 auto 2.2222222222em;
   padding: 0 1.3333333333em; }
 
 .categories {
@@ -652,11 +676,15 @@ nav {
   font-family: "Open Sans", Helvetica, Arial, sans-serif;
   border-radius: 0.2em;
   -webkit-appearance: none;
-  font-size: 18px;
+  font-size: 13px;
   padding: 0.8333333333em;
   width: 60%;
+  max-width: 450px;
   border: 1px solid #ddd;
   box-shadow: 0 1px 0 rgba(0, 0, 0, 0.3) inset; }
+  @media (min-width: 768px) {
+    .input--search {
+      font-size: 18px; } }
 
 .header__logo {
   width: 40px;
@@ -677,24 +705,38 @@ nav {
         fill: #162745;
         padding: 0.2222222222em; } }
 .icon--search {
+  visibility: hidden;
   width: 20px;
   height: 20px;
   position: relative;
-  top: 3px;
   left: -50px; }
+  @media (min-width: 420px) {
+    .icon--search {
+      visibility: visible;
+      top: 6px; } }
+  @media (min-width: 768px) {
+    .icon--search {
+      visibility: visible;
+      top: 3px; } }
   .icon--search .path {
     fill: #B1B8C1; }
 
-.categories {
+.articles {
   display: flex;
   flex-direction: column; }
+  @media (min-width: 768px) {
+    .articles {
+      flex-direction: row; } }
 
+@media (min-width: 768px) {
+  .article {
+    padding: 1.3333333333em 0.5555555556em; } }
 .article__card {
   display: flex;
   align-items: center;
   align-self: flex-end;
   width: 100%;
-  padding: 1.3333333333em 0.5555555556em;
+  padding: 0.8333333333em 0.5555555556em;
   border-radius: 0.2em;
   background-color: #fff;
   box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.15);

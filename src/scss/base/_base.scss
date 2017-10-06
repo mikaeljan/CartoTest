@@ -12,14 +12,10 @@ body {
   color: $color--prim;
   line-height: $line-height;
 }
-
 h1,
-h2,
-h3,
 p {
   margin:0;
 }
-
 a {
-  text-decoration: none;
+  @extend %link;
 }
