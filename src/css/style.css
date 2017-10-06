@@ -695,7 +695,7 @@ nav {
   width: 60%;
   max-width: 450px;
   border: 1px solid #ddd;
-  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.3) inset; }
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.4) inset; }
   @media (min-width: 768px) {
     .input--search {
       font-size: 18px; } }
@@ -727,11 +727,11 @@ nav {
   @media (min-width: 420px) {
     .icon--search {
       visibility: visible;
-      top: 6px; } }
+      top: 9px; } }
   @media (min-width: 768px) {
     .icon--search {
       visibility: visible;
-      top: 3px; } }
+      top: 5px; } }
   .icon--search .path {
     fill: #B1B8C1; }
 
@@ -772,11 +772,12 @@ nav {
       color: #162745;
       text-decoration: none; }
     .article__card--api {
+      font-family: "Open Sans", Helvetica, Arial, sans-serif;
       color: #fff;
       font-size: 10px;
       border-radius: 4px;
       margin-left: auto;
-      padding: 0 0.8333333333em;
+      padding: 0 1.1111111111em;
       background-color: #DDDDDD; }
 
 /*# sourceMappingURL=style.css.map */

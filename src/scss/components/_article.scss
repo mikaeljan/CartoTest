@@ -42,11 +42,12 @@
       text-decoration: none;
     }
     @include m('api') {
+      font-family: $font-family--sec;
       color: $white;
       font-size: $font-size--xsm;
       border-radius: $br--default;
       margin-left:auto;
-      padding: 0 em(15px);
+      padding: 0 em(20px);
       background-color: $alto;
     }
   }
