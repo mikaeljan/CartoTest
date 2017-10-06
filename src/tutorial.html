@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5, user-scalable=0"/>
+    <title>ACME CORP.</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header>
+    <div class="wrapper">
+        <div class="header__main">
+            <img class="header__logo" src="img/logo.png" alt="logo">
+            <span class="header__title"><strong>ACME</strong> CORP.</span>
+            <nav role="navigation">
+                <div id="menuToggle">
+                    <!--
+                    A fake / hidden checkbox is used as click receiver,
+                    so you can use the :checked selector on it.
+                    -->
+                    <input type="checkbox" />
+                    <!--These will represent the hamburger icon-->
+                    <span></span>
+                    <span></span>
+                    <span></span>
+
+                    <nav class="menu">
+                        <div class="menu__list">
+                            <a class="nav-item" href="">Builder</a>
+                            <a class="nav-item" href="">Engine</a>
+                            <a class="nav-item" href="">Solutions
+                                <svg class="icon--arrow" viewBox="0 0 6 3" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                            class="path" fill="#162945" d="M2.62 2.738L3 3l.38-.262 2.113-1.456L6 .932 5.24 0 4.73.35 2.994 1.54 1.268.35.76 0 0 .932l.507.35L2.62 2.738" fill-rule="evenodd">
+                                    </path>
+                                </svg>
+                            </a>
+                            <a class="nav-item" href="">Pricing</a>
+                            <a class="nav-item" href="">Blog</a>
+                        </div>
+                        <div class="menu__list menu--left">
+                            <a class="nav-item" href="">Login</a>
+                            <a class="nav-item" href="">Contact us</a>
+                        </div>
+                    </nav>
+                </div>
+            </nav>
+        </div>
+    </div> <!--End wrapper-->
+</header>
+
+</body>
+</html>
