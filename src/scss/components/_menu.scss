@@ -5,6 +5,8 @@
 nav {
   font-size: $font-size--sm;
   margin-left:auto;
+  @include mq("tablet"){
+  }
 
 }
 // Secondary menu located under the header section
@@ -32,6 +34,11 @@ nav {
   z-index: 1;
   -webkit-user-select: none;
   user-select: none;
+  @include mq("tablet"){
+    position: inherit;
+    margin-left: em(-80px);
+    width: 100%;
+  }
 }
 
 #menuToggle input {
@@ -47,6 +54,9 @@ nav {
   opacity: 0; /* hide this */
   z-index: 2; /* and place it over the hamburger */
   -webkit-touch-callout: none;
+  @include mq('tablet'){
+    display:none;
+  }
 }
 
 /*
@@ -68,6 +78,9 @@ nav {
   transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
               background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
               opacity 0.55s ease;
+  @include mq('tablet'){
+    display:none;
+  }
 }
 
 #menuToggle span:first-child {
@@ -109,31 +122,50 @@ nav {
  */
 .menu {
   color: $white;
-  width:360px;
+  width: 360px;
   position: absolute;
   display: none;
-  right:-70px;
-  height:100vh;
+  right: -75px;
+  height: 100vh;
   margin-top: -50px;
   padding-top: 60px;
-  background-color: rgba($black,.8);
+  background-color: rgba($black, .8);
   list-style-type: none;
-  @include e('list'){
+  @include mq('tablet') {
+    color: $color--prim;
+    width:auto;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: auto;
+    padding: 0;
+    margin:0;
+    background-color: $color--bg;
+  }
+  @include e('list') {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
     justify-content: space-between;
-  }
-  @include m('left') {
-    flex-direction: row;
-    justify-content: flex-end;
-    border-top:1px solid $color--border;
+    @include mq('tablet') {
+      flex-direction: row;
+      margin-right: em(15px);
+    }
+    @include m('left') {
+      flex-direction: row;
+      justify-content: flex-end;
+      border-top: 1px solid $color--border;
+    }
   }
 }
-
 .menu .nav-item {
   color: $white;
   padding: em(15px);
+  @include mq("tablet"){
+    color:$color--prim;
+    padding: 0 em(15px);
+  }
 }
 
 // After input is checked
@@ -141,4 +173,8 @@ nav {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  //In case you switch hamburger and resize
+  @include mq('tablet'){
+    flex-direction: row;
+  }
 }

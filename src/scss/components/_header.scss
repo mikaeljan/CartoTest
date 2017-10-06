@@ -10,6 +10,13 @@ header {
   display:flex;
   background-color: $color--bg;
   margin-bottom: em(15px);
+  & nav {
+    @include mq('tablet'){
+      align-self: flex-end;
+      flex-grow: 1;
+      display: flex;
+    }
+  }
 }
 .header__logo {
   margin: em(25px) 0 0;

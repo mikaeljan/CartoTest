@@ -11,8 +11,15 @@
     padding: em(2px);
     width:$icon--xsm;
     height: $icon--xsm;
+    @include mq("tablet"){
+      padding: em(8px);
+    }
     & .path {
       fill: $white;
+      @include mq("tablet"){
+        fill:$color--prim;
+        padding: em(4px);
+      }
     }
   }
   @include m("search"){

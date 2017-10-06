@@ -13,3 +13,6 @@
     2. Co este musi Gulp spravit?
     
 6. Optimizovat stranky a make it accessible (pozriet rychlo kurzy a projekty co musi splnat)
+
+### Notes during Code Test
+1. My first take on making custom non-jQuery/JS hambuger menu with only CSS. The result was clumsy and very specific to this navigation, took a lot of experimenting and custom styling.
