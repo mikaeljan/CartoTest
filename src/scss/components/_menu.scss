@@ -120,7 +120,7 @@ nav {
  */
 .menu {
   color: $white;
-  width: 360px;
+  width: 768px;
   position: absolute;
   display: none;
   right: -75px;
@@ -146,9 +146,11 @@ nav {
     flex-direction: column;
     align-items: flex-end;
     justify-content: space-between;
+    padding: em(30px);
     @include mq('tablet') {
       flex-direction: row;
       margin-right: em(15px);
+      padding: 0;
     }
     @include m('left') {
       flex-direction: row;
@@ -158,9 +160,11 @@ nav {
   }
 }
 .menu .nav-item {
+  font-size: $text-normal--md;
   color: $white;
   padding: em(15px);
   @include mq("tablet"){
+    font-size: $text-normal--sm;
     color:$color--prim;
     padding: 0 em(15px);
   }

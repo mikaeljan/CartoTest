@@ -3,91 +3,95 @@
 // ==========================================================================
 
 // Font-stacks
-$font-url--google           : "https://fonts.googleapis.com/css?family=Montserrat:400,700|Open+Sans:400,600";
-$font-family--prim          : 'Montserrat', Helvetica, Arial, sans-serif;
-$font-family--sec           : 'Open Sans', Helvetica, Arial, sans-serif;
+$font-url--google     : "https://fonts.googleapis.com/css?family=Montserrat:400,700|Open+Sans:400,600";
+$font-family--prim    : 'Montserrat', Helvetica, Arial, sans-serif;
+$font-family--sec     : 'Open Sans', Helvetica, Arial, sans-serif;
 
 // Font Weights
 
-$font-weight--regular   : 400;
-$font-weight--bold      : 600;
-$font-weight--xbold     : 700;
+$font-weight--regular : 400;
+$font-weight--bold    : 600;
+$font-weight--xbold   : 700;
 
 // Text sizes
 
+$font-size--xsm       : 10px;
 $font-size--sm        : 13px;
 $font-size--md        : 18px;
 $font-size--lg        : 26px;
 $font-size--xlg       : 32px;
 
-$line-height        : 30px;
+// Functional text variables
+$text-title--sm       : 15px;
+$text-title--md       : $font-size--md;
+$text-title--lg       : $font-size--lg;
+$text-title--xlg      : $font-size--xlg;
 
-$text-title--sm     : 15px;
-$text-title--md     : $font-size--md;
-$text-title--lg     : $font-size--lg;
+$text-normal--xsm     : $font-size--xsm; // For API tag
+$text-normal--sm      : $font-size--sm;
+$text-normal--md      : 15px;
+$text-normal--lg      : 20px;
 
-$text-normal--sm    : $font-size--sm;
-$text-normal--md    : 15px;
-$text-normal--lg    : 20px;
+$line-height          : 30px;
 
 //Colors
   // Descriptive color variables
-$white          : #fff;
-$black          : #000;
+$white                : #fff;
+$black                : #000;
 
-$alabaster      : #F9F9F9;
-$big-stone      : #162745;
-$nile-blue      : #1B3558;
-$pale-sky       : #647083;
-$azure-radiance : #1181FB;
-$cadet-blue     : #B1B8C1;
-$mantis         : #73C86B;  // For small icons
-$sugar-cane     : #F6FFF5;  // For info-cards
-$alto           : #DDDDDD;  // For API tag in info-cards
-$gallery        : #EEEEEE;  // For separators, borders
+$alabaster            : #F9F9F9;
+$big-stone            : #162745;
+$nile-blue            : #1B3558;
+$pale-sky             : #647083;
+$azure-radiance       : #1181FB;
+$cadet-blue           : #B1B8C1;
+$mantis               : #73C86B;  // For small icons
+$sugar-cane           : #F6FFF5;  // For info-cards
+$alto                 : #DDDDDD;  // For API tag in info-cards
+$gallery              : #EEEEEE;  // For separators, borders
 
 // Functional color variables
-$color--prim         : $big-stone;
-$color--sec          : $pale-sky;
-$color--input        : $cadet-blue;
+$color--prim          : $big-stone;
+$color--sec           : $pale-sky;
+$color--input         : $cadet-blue;
 
-$color--bg           : $white;
-$color--bg--light    : $alabaster;
+$color--bg            : $white;
+$color--bg--light     : $alabaster;
 
-$color--border       : $gallery;
-$color--link-default : $azure-radiance;
-$color--active       : $nile-blue;
+$color--border        : $gallery;
+$color--link-default  : $azure-radiance;
+$color--active        : $nile-blue;
 
-$color--svg          : $mantis;
+$color--svg           : $mantis;
 
 // Icon size
-$icon--xsm  : 10px;
-$icon--sm   : 20px;
-$icon--md   : 40px;
-$icon--lg   : 65px;
+$icon--xsm            : 10px;
+$icon--sm             : 24px;
+$icon--md             : 40px;
+$icon--lg             : 65px;
 
 // Border radius
 
-$br--default    : 0.2em;
-$br--round      : 50%;
+$br--default          : 4px;
+$br--round            : 50%;
 
 // Transitions
 
-$trns-duration  : .6s;
-$trns-delay     : .05s;
+$trns-duration        : .6s;
+$trns-delay           : .05s;
 
 //Grid variables
 
-$g-col-basis    : 8.333;
-$g-gutter-width : 10px;
-$g-col-count    : 12;
-$g-cont-max-w   : 1024px;
+$g-col-basis          : 8.333;
+$g-gutter-width       : 10px;
+$g-col-count          : 12;
+$g-cont-max-w         : 1024px;
 
 
 //Breakpoints
-$brkpoint--xs    : 420px;
-$brkpoint--sm    : 576px;
-$brkpoint--md    : 768px;
-$brkpoint--lg    : 962px;
-$brkpoint--xl    : 1200px;
+$brkpoint--xs         : 420px;
+$brkpoint--sm         : 576px;
+$brkpoint--md         : 768px;
+$brkpoint--lg         : 962px;
+$brkpoint--xl         : 1200px;
 

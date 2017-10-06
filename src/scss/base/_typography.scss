@@ -5,25 +5,33 @@
   font-weight: $font-weight--bold;
   color:$color--active;
 }
-
 .title,
 .article__title {
   @extend %title;
-}
-.article__title {
-  @include mq("tablet") {
-    font-size: $text-title--md;
-  }
 }
 .desc,
 .article__desc {
   @extend %desc;
 }
+.article__title {
+  font-weight: $font-weight--regular;
+  font-size: $text-title--sm;
+  @include mq("mobile") {
+    font-size: $text-title--md;
+  }
+}
 .desc {
-  @include mq("tablet") {
+  font-size:$text-normal--md;
+  @include mq("mobile") {
     font-size:$text-normal--lg ;
   }
 }
+.article__desc {
+  @include mq("mobile") {
+    font-size:$text-normal--md ;
+  }
+}
+
 .article__card--text {
   font-size: $text-normal--md;
 }

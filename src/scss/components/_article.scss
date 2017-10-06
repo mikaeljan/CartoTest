@@ -9,10 +9,12 @@
   }
 }
 .article {
+  color: $nile-blue;
   @include mq("tablet") {
-    padding: em(24px) em(10px);
+    padding: em(10px);
   }
   @include e('card'){
+    font-weight: 600;
     display: flex;
     align-items: center;
     align-self: flex-end;
@@ -20,13 +22,17 @@
     padding: em(15px) em(10px);
     border-radius: $br--default;
     background-color: $color--bg;
-    box-shadow: 0 1px 2px 0 rgba(0,0,0,.15);
+    box-shadow: 0 1px 2px rgba(0,0,0,0.15);
     margin: em(20px) 0;
 
     @include m("icon"){
       margin:0 em(20px);
       width:$icon--md;
       height:$icon--md;
+      @include mq("tablet"){
+        width: $icon--sm;
+        height: $icon--sm;
+      }
       & .path {
         fill: $color--svg;
       }
@@ -37,10 +43,10 @@
     }
     @include m('api') {
       color: $white;
-      font-size: $font-size--sm;
+      font-size: $font-size--xsm;
       border-radius: $br--default;
       margin-left:auto;
-      padding: em(5px) em(25px);
+      padding: 0 em(15px);
       background-color: $alto;
     }
   }

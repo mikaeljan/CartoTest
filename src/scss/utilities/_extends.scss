@@ -5,10 +5,12 @@
   color: $color--link-default;
   text-decoration: none;
 }
+
 %title {
-    font-size: $text-title--md;
+  font-size: $text-title--lg;
+  margin: em(10px) 0;
     @include mq("tablet"){
-      font-size: $text-title--lg;
+      font-size: $text-title--xlg;
     }
 }
 %desc {
