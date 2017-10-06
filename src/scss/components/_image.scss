@@ -7,10 +7,10 @@
   margin-left: -8px;
 }
 .icon {
+  width:$icon--xsm;
+  height: $icon--xsm;
   @include m("arrow"){
     padding: em(2px);
-    width:$icon--xsm;
-    height: $icon--xsm;
     @include mq("tablet"){
       padding: em(8px);
     }

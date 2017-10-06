@@ -479,7 +479,8 @@ p {
 
 .side-bar {
   font-size: 13px;
-  font-family: "Open Sans", Helvetica, Arial, sans-serif; }
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  color: #647083; }
 
 header {
   background-color: #fff;
@@ -658,11 +659,9 @@ header {
     .nav--sec .nav__item:last-child {
       margin-right: 0; }
 
-.nav--side .nav__item {
-  margin: 0.8333333333em 0; }
-  .nav--side .nav__item--list {
-    display: flex;
-    flex-direction: column; }
+.nav--side .nav__item--list {
+  display: flex;
+  flex-direction: column; }
 
 .wrapper {
   display: flex;
@@ -718,35 +717,36 @@ header {
   height: 40px;
   margin-left: -8px; }
 
-.icon--arrow {
-  padding: 0.1111111111em;
-  width: 10px;
-  height: 10px; }
-  @media (min-width: 768px) {
-    .icon--arrow {
-      padding: 0.4444444444em; } }
-  .icon--arrow .path {
-    fill: #fff; }
+.icon {
+  width: 11px;
+  height: 11px; }
+  .icon--arrow {
+    padding: 0.1111111111em; }
     @media (min-width: 768px) {
-      .icon--arrow .path {
-        fill: #162745;
-        padding: 0.2222222222em; } }
-.icon--search {
-  visibility: hidden;
-  width: 24px;
-  height: 24px;
-  position: relative;
-  left: -50px; }
-  @media (min-width: 420px) {
-    .icon--search {
-      visibility: visible;
-      top: 9px; } }
-  @media (min-width: 768px) {
-    .icon--search {
-      visibility: visible;
-      top: 5px; } }
-  .icon--search .path {
-    fill: #B1B8C1; }
+      .icon--arrow {
+        padding: 0.4444444444em; } }
+    .icon--arrow .path {
+      fill: #fff; }
+      @media (min-width: 768px) {
+        .icon--arrow .path {
+          fill: #162745;
+          padding: 0.2222222222em; } }
+  .icon--search {
+    visibility: hidden;
+    width: 24px;
+    height: 24px;
+    position: relative;
+    left: -50px; }
+    @media (min-width: 420px) {
+      .icon--search {
+        visibility: visible;
+        top: 9px; } }
+    @media (min-width: 768px) {
+      .icon--search {
+        visibility: visible;
+        top: 5px; } }
+    .icon--search .path {
+      fill: #B1B8C1; }
 
 .articles {
   display: flex;

@@ -178,7 +178,6 @@ nav {
 // Side navigations
 .nav--side {
   & .nav__item {
-    margin: em(15px) 0;
     @include m("list") {
       display: flex;
       flex-direction: column;
