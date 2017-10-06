@@ -9,9 +9,12 @@
   }
 }
 .article {
+  font-size: $text-normal--sm;
+  margin-bottom:em(15px);
   color: $nile-blue;
   @include mq("tablet") {
     padding: em(10px);
+    font-size: $text-normal--md;
   }
   @include e('card'){
     font-weight: 600;

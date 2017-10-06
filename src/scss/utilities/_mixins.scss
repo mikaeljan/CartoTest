@@ -52,8 +52,7 @@
     &--#{$i}{
 
       flex-basis:percentage(($g-col-basis * $i)/100);
-      //flex-basis: $g-col-basis;
-      //@include flex-grow(#{$i});
+      flex-grow: 1;
     }
   }
 }

@@ -35,9 +35,21 @@
 .article__card--text {
   font-size: $text-normal--md;
 }
-//CARTO - #647083
+
 .side-bar {
   font-size: $text-normal--sm;
   font-family: $font-family--sec;
-  color:$color--sec;
+  & .nav__item--title {
+    color: $color--input;
+  }
+  & .nav__item--list a {
+    color: $color--sec;
+  }
+  & .nav__item--list .nav__item.active {
+    font-weight: $font-weight--bold;
+  }
+}
+.table {
+  font-family: $font-family--ter;
+  font-size: $text-normal--sm;
 }

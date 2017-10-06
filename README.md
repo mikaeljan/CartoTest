@@ -16,5 +16,8 @@
 6. Optimizovat stranky a make it accessible (pozriet rychlo kurzy a projekty co musi splnat)
 
 ### Notes during Code Test
-1. Made a custom grid system in Sass, was considering using some already created online, decided against it.
-2. My first take on making custom non-jQuery/JS hambuger menu with only CSS. The result was clumsy and very specific to this navigation, took a lot of experimenting and custom styling. Might reconsider this approach next time.
+1. Made a custom grid system in Sass, was considering using some already created online, decided against it for practicing purposes.
+
+2. SVGs are inline in order to save requests to the server.
+
+3. Since it was suggested not use jQuery I did my first take on making custom non-jQuery/JS hambuger menu with only CSS. The result was clumsy and very specific to this navigation, took a lot of experimenting and custom styling. Might reconsider this approach next time.
