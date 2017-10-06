@@ -1,23 +1,27 @@
 // ======================================
 //  Images/Icons
 // ======================================
-img {
-  width: 100%;
-}
+//img {
+//  width: 100%;
+//}
 .icon {
-  width:$icon--sm;
-  height: $icon--sm;
-  @include e("logo"){
-    width:$icon--lg;
-    height: $icon--lg;
-    border-radius: $br--round;
+  @include m("arrow"){
+    padding: em(2px);
+    width:$icon--xsm;
+    height: $icon--xsm;
+    & .path {
+      fill: $white;
+    }
+  }
+  @include m("search"){
+    width:$icon--sm;
+    height: $icon--sm;
+    position: relative;
+    top:3px;
+    left: -50px;
+    & .path{
+      fill: $color--input;
+    }
   }
 }
-.path {
-  fill: $white;
-  transition:fill 0.3s;
-}
-a:hover .path {
-  //fill: $color--sec;
-  fill: $color--sec;
-}
+

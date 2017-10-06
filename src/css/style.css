@@ -438,7 +438,8 @@ a {
   margin: 0.8333333333em 0; }
 
 .lead {
-  font-family: "Open Sans", Helvetica, Arial, sans-serif; }
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  color: #647083; }
 
 header {
   background-color: #fff;
@@ -550,10 +551,7 @@ nav {
   margin-top: -50px;
   padding-top: 60px;
   background-color: rgba(0, 0, 0, 0.8);
-  list-style-type: none;
-  opacity: 0;
-  -webkit-font-smoothing: antialiased;
-  transition: all 0.6s ease-in; }
+  list-style-type: none; }
   .menu__list {
     display: flex;
     flex-direction: column;
@@ -568,16 +566,19 @@ nav {
   color: #fff;
   padding: 0.8333333333em; }
 
-#menuToggle input:checked ~ nav {
+#menuToggle input:checked ~ .menu {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  opacity: 1; }
+  justify-content: space-between; }
 
 .wrapper {
   max-width: 940px;
   margin: 0 auto;
   padding: 0 1.3333333333em; }
+
+.categories {
+  display: flex;
+  justify-content: space-between; }
 
 .grid__col--1 {
   flex-basis: 8.333%; }
@@ -603,5 +604,61 @@ nav {
   flex-basis: 91.663%; }
 .grid__col--12 {
   flex-basis: 99.996%; }
+
+.input--search {
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  border-radius: 0.2em;
+  -webkit-appearance: none;
+  font-size: 18px;
+  padding: 0.8333333333em;
+  width: 60%;
+  border: 1px solid #ddd;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.3) inset; }
+
+.icon--arrow {
+  padding: 0.1111111111em;
+  width: 10px;
+  height: 10px; }
+  .icon--arrow .path {
+    fill: #fff; }
+.icon--search {
+  width: 20px;
+  height: 20px;
+  position: relative;
+  top: 3px;
+  left: -50px; }
+  .icon--search .path {
+    fill: #B1B8C1; }
+
+.categories {
+  display: flex;
+  flex-direction: column; }
+
+.category__card {
+  display: flex;
+  align-items: center;
+  align-self: flex-end;
+  width: 100%;
+  padding: 1.3333333333em 0.5555555556em;
+  border-radius: 0.2em;
+  background-color: #fff;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.15);
+  margin: 1.1111111111em 0; }
+  .category__card--icon {
+    margin: 0 1.1111111111em;
+    width: 40px;
+    height: 40px; }
+    .category__card--icon .path {
+      fill: #73C86B; }
+  .category__card--text {
+    color: #162745;
+    text-decoration: none; }
+  .category__card--api {
+    color: #fff;
+    font-size: 13px;
+    border-radius: 0.2em;
+    margin-left: auto;
+    padding: 0.5555555556em 1.3888888889em;
+    background-color: #DDDDDD; }
 
 /*# sourceMappingURL=style.css.map */

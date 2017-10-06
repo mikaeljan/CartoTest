@@ -115,9 +115,6 @@ nav {
   padding-top: 60px;
   background-color: rgba($black,.8);
   list-style-type: none;
-  opacity:0;
-  -webkit-font-smoothing: antialiased;
-  transition: all $trns-duration ease-in;
   @include e('list'){
     display: flex;
     flex-direction: column;
@@ -137,10 +134,8 @@ nav {
 }
 
 // After input is checked
-#menuToggle input:checked ~ nav {
+#menuToggle input:checked ~ .menu {
   display: flex;
   flex-direction: column;
-
   justify-content: space-between;
-  opacity: 1;
 }

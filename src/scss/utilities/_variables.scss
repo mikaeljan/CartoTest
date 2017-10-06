@@ -39,7 +39,8 @@ $pale-sky       : #647083;
 $azure-radiance : #1181FB;
 $cadet-blue     : #B1B8C1;
 $mantis         : #73C86B;  // For small icons
-$sugar-cane     : #F6FFF5;  // For info-window
+$sugar-cane     : #F6FFF5;  // For info-cards
+$alto           : #DDDDDD;  // For API tag in info-cards
 $gallery        : #EEEEEE;  // For separators, borders
 
 // Functional color variables
@@ -54,14 +55,17 @@ $color--border       : $gallery;
 $color--link-default : $azure-radiance;
 $color--active       : $nile-blue;
 
+$color--svg          : $mantis;
+
 // Icon size
-$icon--sm : 25px;
-$icon--md : 40px;
-$icon--lg : 65px;
+$icon--xsm  : 10px;
+$icon--sm   : 20px;
+$icon--md   : 40px;
+$icon--lg   : 65px;
 
 // Border radius
 
-$br--default    : 0.4em;
+$br--default    : 0.2em;
 $br--round      : 50%;
 
 // Transitions
