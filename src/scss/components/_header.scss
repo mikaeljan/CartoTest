@@ -10,9 +10,10 @@ header {
   }
 }
 
-
 .header__main {
   display:flex;
+  justify-content: space-between;
+  width:100%;
   background-color: $color--bg;
   margin-bottom: em(15px);
   & nav {
@@ -28,5 +29,5 @@ header {
   }
 .header__title {
   align-self: flex-end;
-
+  margin-right: auto;
 }

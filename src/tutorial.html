@@ -7,47 +7,89 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<header>
+    <header>
+        <div class="wrapper">
+            <div class="header__main">
+                <img class="header__logo" src="img/logo.png" alt="logo">
+                <span class="header__title"><strong>ACME</strong> CORP.</span>
+                <nav role="navigation">
+                    <div id="menuToggle">
+                        <!--
+                        A fake / hidden checkbox is used as click receiver,
+                        so you can use the :checked selector on it.
+                        -->
+                        <input type="checkbox" />
+                        <!--These will represent the hamburger icon-->
+                        <span></span>
+                        <span></span>
+                        <span></span>
+
+                        <nav class="menu">
+                            <div class="menu__list">
+                                <a class="nav-item" href="">Builder</a>
+                                <a class="nav-item" href="">Engine</a>
+                                <a class="nav-item" href="">Solutions
+                                    <svg class="icon--arrow" viewBox="0 0 6 3" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                                class="path" fill="#162945" d="M2.62 2.738L3 3l.38-.262 2.113-1.456L6 .932 5.24 0 4.73.35 2.994 1.54 1.268.35.76 0 0 .932l.507.35L2.62 2.738" fill-rule="evenodd">
+                                        </path>
+                                    </svg>
+                                </a>
+                                <a class="nav-item" href="">Pricing</a>
+                                <a class="nav-item" href="">Blog</a>
+                            </div>
+                            <div class="menu__list menu--left">
+                                <a class="nav-item" href="">Login</a>
+                                <a class="nav-item" href="">Contact us</a>
+                            </div>
+                        </nav>
+                    </div>
+                </nav>
+            </div>
+        </div> <!--End wrapper-->
+    </header>
+
     <div class="wrapper">
-        <div class="header__main">
-            <img class="header__logo" src="img/logo.png" alt="logo">
-            <span class="header__title"><strong>ACME</strong> CORP.</span>
-            <nav role="navigation">
-                <div id="menuToggle">
-                    <!--
-                    A fake / hidden checkbox is used as click receiver,
-                    so you can use the :checked selector on it.
-                    -->
-                    <input type="checkbox" />
-                    <!--These will represent the hamburger icon-->
-                    <span></span>
-                    <span></span>
-                    <span></span>
-
-                    <nav class="menu">
-                        <div class="menu__list">
-                            <a class="nav-item" href="">Builder</a>
-                            <a class="nav-item" href="">Engine</a>
-                            <a class="nav-item" href="">Solutions
-                                <svg class="icon--arrow" viewBox="0 0 6 3" xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                            class="path" fill="#162945" d="M2.62 2.738L3 3l.38-.262 2.113-1.456L6 .932 5.24 0 4.73.35 2.994 1.54 1.268.35.76 0 0 .932l.507.35L2.62 2.738" fill-rule="evenodd">
-                                    </path>
-                                </svg>
-                            </a>
-                            <a class="nav-item" href="">Pricing</a>
-                            <a class="nav-item" href="">Blog</a>
-                        </div>
-                        <div class="menu__list menu--left">
-                            <a class="nav-item" href="">Login</a>
-                            <a class="nav-item" href="">Contact us</a>
-                        </div>
-                    </nav>
-                </div>
-            </nav>
+        <div class="grid__col--3">
+            <aside class="side-bar">
+                <ul class="nav--side">
+                    <li class="nav__item">
+                        <span>Home</span>
+                    <li class="nav__item">
+                        <span>Client libraries</span>
+                        <ul class="nav__item--list">
+                            <li class="nav__item active">Getting started</li>
+                            <li class="nav__item">General Concepts</li>
+                            <li class="nav__item">Named Maps</li>
+                            <li class="nav__item">Specific UI Functions</li>
+                            <li class="nav__item">Events</li>
+                            <li class="nav__item">API Reference</li>
+                        </ul>
+                    </li>
+                    <li class="nav__item">
+                        <span>Location Data Services</span>
+                        <ul class="nav__item--list">
+                            <li class="nav__item">Routing</li>
+                        </ul>
+                    </li>
+                    <li class="nav__item">
+                        <span>Builder</span>
+                        <ul class="nav__item--list">
+                            <li class="nav__item">Static</li>
+                            <li class="nav__item">Tiles</li>
+                            <li class="nav__item">WMS</li>
+                        </ul>
+                    </li>
+                </ul>
+            </aside>
         </div>
-    </div> <!--End wrapper-->
-</header>
 
+        <div class="grid__col--9">
+            <main>
+                <h1>GETTING STARTED</h1>
+            </main>
+        </div>
+
+    </div>
 </body>
 </html>

@@ -2,12 +2,13 @@
 //  Containers
 // ======================================
 .wrapper {
+  display: flex;
+  justify-content: center;
   max-width: 960px;
   margin: 0 auto em(40px);
   padding: 0 em(24px);
 }
 
-.categories {
-  display: flex;
-  justify-content: space-between;
+.side-bar {
+  margin-right:em(25px);
 }

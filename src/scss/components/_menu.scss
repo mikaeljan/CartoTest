@@ -2,26 +2,10 @@
 //  Nav menus/Hamburger menu
 // ======================================
 nav {
-  font-size: $font-size--sm;
-  margin-left:auto;
+  @extend  %nav;
 }
 
-// Secondary menu located under the header section
-.nav--sec {
-  display:flex;
-  margin: -80px 0 em(120px) 0;
-  flex-wrap: wrap;
-  border-bottom: 1px solid $color--border;
-  & .nav__item {
-    color: $color--sec;
-    margin: em(20px) em(40px) em(20px) 0;
-    &:last-child {
-      margin-right:0;
-    }
-  }
-}
-
-// Start of the Hamburger menu and main nav section located in header
+// ===================Start of the Hamburger menu and main nav section located in header==============
 #menuToggle {
   display: block;
   position: relative;
@@ -70,7 +54,6 @@ nav {
   border-radius: 3px;
   z-index: 1;
   transform-origin: 4px 0;
-
   transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
               background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
               opacity 0.55s ease;
@@ -86,27 +69,24 @@ nav {
 #menuToggle span:nth-last-child(2) {
   transform-origin: 0 100%;
 }
-
 /*
  * Transform all the slices of hamburger
- * into a crossmark.
+ * into a X.
  */
 #menuToggle input:checked ~ span {
   opacity: 1;
   transform: rotate(45deg) translate(-2px, -1px);
   background: $white;
 }
-
 /*
- * But let's hide the middle one.
+ * Hiding middle one
  */
 #menuToggle input:checked ~ span:nth-last-child(3) {
   opacity: 0;
   transform: rotate(0deg) scale(0.2, 0.2);
 }
-
 /*
- * Ohyeah and the last one should go the other direction
+ * Reversing last one's direction
  */
 #menuToggle input:checked ~ span:nth-last-child(2) {
   transform: rotate(-45deg) translate(0, -1px);
@@ -176,5 +156,32 @@ nav {
   //In case you switch hamburger and resize
   @include mq('tablet'){
     flex-direction: row;
+  }
+}
+//============================== End Hamburger Menu ==========================
+
+// Secondary menu located under the header section
+.nav--sec {
+  display:flex;
+  margin: -80px 0 em(120px) 0;
+  flex-wrap: wrap;
+  border-bottom: 1px solid $color--border;
+  & .nav__item {
+    color: $color--sec;
+    margin: em(20px) em(40px) em(20px) 0;
+    &:last-child {
+      margin-right:0;
+    }
+  }
+}
+
+// Side navigations
+.nav--side {
+  & .nav__item {
+    margin: em(15px) 0;
+    @include m("list") {
+      display: flex;
+      flex-direction: column;
+    }
   }
 }

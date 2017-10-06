@@ -23,6 +23,10 @@ a {
     .article__desc {
       font-size: 15px; } }
 
+nav {
+  display: flex;
+  font-size: 13px; }
+
 /*! normalize.css v5.0.0 | MIT License | github.com/necolas/normalize.css */
 /**
  * 1. Change the default font family in all browsers (opinionated).
@@ -473,6 +477,10 @@ p {
 .article__card--text {
   font-size: 15px; }
 
+.side-bar {
+  font-size: 13px;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif; }
+
 header {
   background-color: #fff;
   border-bottom: 1px solid #EEEEEE;
@@ -482,6 +490,8 @@ header {
 
 .header__main {
   display: flex;
+  justify-content: space-between;
+  width: 100%;
   background-color: #fff;
   margin-bottom: 0.8333333333em; }
   @media (min-width: 768px) {
@@ -494,22 +504,8 @@ header {
   margin: 0.5555555556em 0 0; }
 
 .header__title {
-  align-self: flex-end; }
-
-nav {
-  font-size: 13px;
-  margin-left: auto; }
-
-.nav--sec {
-  display: flex;
-  margin: -80px 0 6.6666666667em 0;
-  flex-wrap: wrap;
-  border-bottom: 1px solid #EEEEEE; }
-  .nav--sec .nav__item {
-    color: #647083;
-    margin: 1.1111111111em 2.2222222222em 1.1111111111em 0; }
-    .nav--sec .nav__item:last-child {
-      margin-right: 0; }
+  align-self: flex-end;
+  margin-right: auto; }
 
 #menuToggle {
   display: block;
@@ -570,7 +566,7 @@ nav {
 
 /*
  * Transform all the slices of hamburger
- * into a crossmark.
+ * into a X.
  */
 #menuToggle input:checked ~ span {
   opacity: 1;
@@ -578,14 +574,14 @@ nav {
   background: #fff; }
 
 /*
- * But let's hide the middle one.
+ * Hiding middle one
  */
 #menuToggle input:checked ~ span:nth-last-child(3) {
   opacity: 0;
   transform: rotate(0deg) scale(0.2, 0.2); }
 
 /*
- * Ohyeah and the last one should go the other direction
+ * Reversing last one's direction
  */
 #menuToggle input:checked ~ span:nth-last-child(2) {
   transform: rotate(-45deg) translate(0, -1px); }
@@ -651,14 +647,32 @@ nav {
     #menuToggle input:checked ~ .menu {
       flex-direction: row; } }
 
+.nav--sec {
+  display: flex;
+  margin: -80px 0 6.6666666667em 0;
+  flex-wrap: wrap;
+  border-bottom: 1px solid #EEEEEE; }
+  .nav--sec .nav__item {
+    color: #647083;
+    margin: 1.1111111111em 2.2222222222em 1.1111111111em 0; }
+    .nav--sec .nav__item:last-child {
+      margin-right: 0; }
+
+.nav--side .nav__item {
+  margin: 0.8333333333em 0; }
+  .nav--side .nav__item--list {
+    display: flex;
+    flex-direction: column; }
+
 .wrapper {
+  display: flex;
+  justify-content: center;
   max-width: 960px;
   margin: 0 auto 2.2222222222em;
   padding: 0 1.3333333333em; }
 
-.categories {
-  display: flex;
-  justify-content: space-between; }
+.side-bar {
+  margin-right: 1.3888888889em; }
 
 .grid__col--1 {
   flex-basis: 8.333%; }

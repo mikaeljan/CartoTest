@@ -22,3 +22,8 @@
     font-size: $text-normal--md;
   }
 }
+
+%nav {
+  display: flex;
+  font-size: $font-size--sm;
+}
