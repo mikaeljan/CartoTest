@@ -1,6 +1,6 @@
 ## To do
 1. Get base CSS
-
+    1. Try to modularize CSS for various uses, less individual classes -- good luck
 2. Create HTML 
 
 3. Ked budes mat basic styles hotove a bude to vyzerat ako na obr<br>tak to vsetko ostava kde? SRC Files. Nezabudni prekonvertovat sass na css
