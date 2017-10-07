@@ -21,9 +21,6 @@ img {
     padding: em(2px);
   @include m("arrow"){
     padding: em(2px);
-    @include mq("tablet"){
-      padding: em(8px);
-    }
     & .path {
       fill: $white;
       @include mq("tablet"){
