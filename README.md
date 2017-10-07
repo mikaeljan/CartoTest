@@ -1,4 +1,11 @@
 # CartoJS Code Test
+Two versions of my take on Code Test from CARTO
+- Vanilla version
+
+- Express JS version
+
+
+(Normally I would create two branches or even two sep. projects but I feel this is still within. If the project was bigger I would divide it.)
 
 ## File structure:
 1. `src/` has all the files I used for building the project from scratch - not optimalized
@@ -22,6 +29,7 @@
     
 
 ### Notes during Code Test
+0. The very first page with CODE TEST made as an separate .html can be also only an overlay of the next page DOCUMENTATION and after clicking it hides showing the page.
 
 1. Made a custom grid system in Sass, was considering using some already created online, decided against it for practicing purposes.
 
