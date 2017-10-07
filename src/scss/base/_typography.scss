@@ -13,7 +13,11 @@
 .article__desc {
   @extend %desc;
 }
+.text--light {
+  color:$color--sec;
+}
 .article__title {
+  color: $color--sec;
   font-weight: $font-weight--regular;
   font-size: $text-title--sm;
   @include mq("mobile") {
@@ -35,11 +39,7 @@
 .article__card--text {
   font-size: $text-normal--md;
 }
-.info__card--text {
-  line-height: $line-height--sm;
-  font-family: "Open Sans", Helvetica, Arial, sans-serif;
-  font-size: $text-normal--sm;
-}
+
 
 .side-bar {
   font-size: $text-normal--sm;
