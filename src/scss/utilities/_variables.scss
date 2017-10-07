@@ -33,7 +33,6 @@ $text-normal--sm      : $font-size--sm;
 $text-normal--md      : 15px;
 $text-normal--lg      : 20px;
 
-$line-height--sm      : 24px;
 $line-height          : 30px;
 
 //Colors
@@ -51,6 +50,7 @@ $mantis               : #73C86B;  // For small icons
 $sugar-cane           : #F6FFF5;  // For info-cards
 $alto                 : #DDDDDD;  // For API tag in info-cards
 $gallery              : #EEEEEE;  // For separators, borders
+
 // Functional color variables
 $color--prim          : $big-stone;
 $color--sec           : $pale-sky;
@@ -58,7 +58,6 @@ $color--input         : $cadet-blue;
 
 $color--bg            : $white;
 $color--bg--light     : $alabaster;
-$color--bg--green     : $sugar-cane;
 
 $color--border        : $gallery;
 $color--link-default  : $azure-radiance;
@@ -67,7 +66,7 @@ $color--active        : $nile-blue;
 $color--svg           : $mantis;
 
 // Icon size
-$icon--xsm            : 12px;
+$icon--xsm            : 11px;
 $icon--sm             : 24px;
 $icon--md             : 40px;
 $icon--lg             : 65px;

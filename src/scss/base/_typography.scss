@@ -35,11 +35,6 @@
 .article__card--text {
   font-size: $text-normal--md;
 }
-.info__card--text {
-  line-height: $line-height--sm;
-  font-family: "Open Sans", Helvetica, Arial, sans-serif;
-  font-size: $text-normal--sm;
-}
 
 .side-bar {
   font-size: $text-normal--sm;
@@ -55,9 +50,6 @@
   }
 }
 .table {
-  font-family: $font-family--sec;
-  font-size: $text-normal--sm;
-}
-td:first-child {
   font-family: $font-family--ter;
+  font-size: $text-normal--sm;
 }
