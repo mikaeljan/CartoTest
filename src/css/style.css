@@ -810,7 +810,7 @@ img {
 
 .article {
   font-size: 13px;
-  margin-bottom: 0.8333333333em;
+  margin-bottom: 1.9444444444em;
   color: #1B3558; }
   @media (min-width: 768px) {
     .article {
@@ -854,18 +854,19 @@ img {
       padding: 0 1.1111111111em;
       background-color: #DDDDDD; }
 
-.main__section .article .article__desc {
-  color: #162745; }
-
-.main__section .article .article__title {
-  font-size: 20px; }
-
 .article__title--lg {
   font-size: 17px;
   font-weight: 700; }
 .article__title--sm {
   font-size: 17px;
   font-weight: 400; }
+
+.main__section .article .article__desc {
+  color: #162745; }
+
+.main__section .article .article__title {
+  color: #162745;
+  font-size: 20px; }
 
 .table {
   width: 100%;
