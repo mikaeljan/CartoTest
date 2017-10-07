@@ -156,83 +156,93 @@
             <div class="grid__col--9">
                 <main class="main__section">
                     <article class="article">
-                        <h2 class="article__title--lg">GETTING STARTED</h2>
-                        <p class="article__desc">The simplest way to use a visualization created in CARTO on an external site is as follows.</p>
-                        <img class="img" src="img/codeBlock.png">
-                        <a class="">Grab the complete example source code
-                        </a>
+                        <section class="article__section">
+                            <h2 class="article__title--lg">GETTING STARTED</h2>
+                            <p class="article__desc">The simplest way to use a visualization created in CARTO on an external site is as follows.</p>
+                            <img class="img" src="img/codeBlock.png">
+                            <a class="#">Grab the complete example source code</a>
+                        </section>
                     </article>
 
                     <article class="article">
-                        <h3 class="article__title">Using the CARTO.js LibraryPermalink 20!!!</h3>
-                        <p class="article__desc"> CARTO.js can be used to embed a visualization you have designed using CARTO’s user interface, or to dynamically create visualizations from scratch, using your data. If you want to create new maps on your webpage, jump to Creating a visualization from scratch. If you already have maps on your webpage and want to add CARTO visualizations to them, read Adding CARTO layers to an existing map.</p>
-                        <p class="article__desc">You can also use the CARTO APIs to create visualizations programmatically. This can be useful when the visualizations react to user interactions. To read more about it, jump to Creating visualizations at runtime.</p>
-                        <table class="table">
-                            <thead>
-                                <tr>
-                                    <th>Arguments</th>
-                                    <th>Description</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>map_id</td>
-                                    <td>a DOM object</td>
-                                </tr>
-                                <tr>
-                                    <td>vizjson_url</td>
-                                    <td>url of the vizjson object</td>
-                                </tr>
-                                <tr>
-                                    <td>callback(vis.layers)</td>
-                                    <td>if a function is specified, it is called once the visualization is created.</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                        <h4 class="article__title--sm">Other Mapping Libraries</h4>
-                        <p class="article__desc">This is the easiest way to quickly get a CARTO map onto your webpage. Use this method when there is no map in your application, and you want to add the visualization to hack over it. CARTO.js handles all the details of loading a map interface, basemap, and your CARTO visualization.</p>
-                        <p class="article__desc">You can start by giving CARTO.js the DIV ID from your HTML where you want to place your map, and the viz.json URL of your visualization (which you can get from the Publish your map options).</p>
-
-                        <div class="article__card info-window green">
-                            <svg class="icon icon--info" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 468.138 468.138" style="enable-background:new 0 0 468.138 468.138;" xml:space="preserve">
-                                <path  fill="#73C86B" d="M234.068,468.138c-62.522,0-121.302-24.348-165.511-68.558C24.347,355.37,0,296.591,0,234.068     S24.347,112.768,68.557,68.558S171.546,0.001,234.068,0.001S355.37,24.348,399.58,68.558     c44.21,44.209,68.558,102.989,68.558,165.511S443.79,355.37,399.58,399.581C355.37,443.79,296.59,468.138,234.068,468.138z      M234.068,20.001c-57.18,0-110.937,22.267-151.369,62.699S20,176.89,20,234.068c0,57.18,22.267,110.937,62.699,151.37     c40.432,40.432,94.189,62.699,151.369,62.699s110.937-22.268,151.37-62.699c40.432-40.433,62.699-94.189,62.699-151.37     c0-57.18-22.268-110.937-62.699-151.369C345.005,42.268,291.249,20.001,234.068,20.001z"/>
-                                <rect  x="206.743" y="184.883" width="43.721" height="174.883" fill="#73C86B"/>
-                                <rect  x="206.743" y="119.303" width="43.721" height="43.721" fill="#73C86B"/>
-                            </svg>
-                            <span class="article__card__text">
-                                <span class="article__card--desc">CARTO.js automatically includes dependencies from other mapping libraries (such as Leaflet, jQuery, Mustache, Underscore, and so on). You do not have to manually include these libraries, or worry about other mapping library version control, when you are using CARTO.js. If you need to see which version of other mapping libraries are included, view the vendor folder for each CARTO.js release.</span>
-                            </span>
-                        </div>
+                        <section class="article__section">
+                            <h3 class="article__title">Using the CARTO.js LibraryPermalink 20</h3>
+                            <p class="article__desc"> CARTO.js can be used to embed a visualization you have designed using CARTO’s user interface, or to dynamically create visualizations from scratch, using your data. If you want to create new maps on your webpage, jump to Creating a visualization from scratch. If you already have maps on your webpage and want to add CARTO visualizations to them, read Adding CARTO layers to an existing map.</p>
+                            <p class="article__desc">You can also use the CARTO APIs to create visualizations programmatically. This can be useful when the visualizations react to user interactions. To read more about it, jump to Creating visualizations at runtime.</p>
+                        </section>
+                        <section class="article__section">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th>Arguments</th>
+                                        <th>Description</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>map_id</td>
+                                        <td>a DOM object</td>
+                                    </tr>
+                                    <tr>
+                                        <td>vizjson_url</td>
+                                        <td>url of the vizjson object</td>
+                                    </tr>
+                                    <tr>
+                                        <td>callback(vis.layers)</td>
+                                        <td>if a function is specified, it is called once the visualization is created.</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </section>
+                        <section class="article__section">
+                            <h4 class="article__title--sm">Other Mapping Libraries</h4>
+                            <p class="article__desc">We have also made it easy for you to build maps using the mapping library of your choice. Whether you are using Leaflet or something else, our CARTO.js code remains the same. This makes our API documentation simple and straightforward. It also makes it easy for you to consistently develop, or maintain, multiple maps online.</p>
+                            <div class="article__card info-window green">
+                                <svg class="icon icon--info" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 468.138 468.138" style="enable-background:new 0 0 468.138 468.138;" xml:space="preserve">
+                                    <path  fill="#73C86B" d="M234.068,468.138c-62.522,0-121.302-24.348-165.511-68.558C24.347,355.37,0,296.591,0,234.068     S24.347,112.768,68.557,68.558S171.546,0.001,234.068,0.001S355.37,24.348,399.58,68.558     c44.21,44.209,68.558,102.989,68.558,165.511S443.79,355.37,399.58,399.581C355.37,443.79,296.59,468.138,234.068,468.138z      M234.068,20.001c-57.18,0-110.937,22.267-151.369,62.699S20,176.89,20,234.068c0,57.18,22.267,110.937,62.699,151.37     c40.432,40.432,94.189,62.699,151.369,62.699s110.937-22.268,151.37-62.699c40.432-40.433,62.699-94.189,62.699-151.37     c0-57.18-22.268-110.937-62.699-151.369C345.005,42.268,291.249,20.001,234.068,20.001z"/>
+                                    <rect  x="206.743" y="184.883" width="43.721" height="174.883" fill="#73C86B"/>
+                                    <rect  x="206.743" y="119.303" width="43.721" height="43.721" fill="#73C86B"/>
+                                </svg>
+                                <span class="article__card__text">
+                                    <span class="article__card--desc">CARTO.js automatically includes dependencies from other mapping libraries (such as Leaflet, jQuery, Mustache, Underscore, and so on). You do not have to manually include these libraries, or worry about other mapping library version control, when you are using CARTO.js. If you need to see which version of other mapping libraries are included, view the vendor folder for each CARTO.js release.</span>
+                                </span>
+                            </div>
+                        </section>
                     </article>
 
                     <article class="article">
-                        <h3 class="article__title">Creating a Visualization from ScratchPermalink</h3>
-                        <p class="article__desc">This is the easiest way to quickly get a CARTO map onto your webpage. Use this method when there is no map in your application, and you want to add the visualization to hack over it. CARTO.js handles all the details of loading a map interface, basemap, and your CARTO visualization.
-                            You can start by giving CARTO.js the DIV ID from your HTML where you want to place your map, and the viz.json URL of your visualization (which you can get from the Publish your map options).
-                        </p>
+                        <section class="article__section">
+                            <h3 class="article__title">Creating a Visualization from ScratchPermalink</h3>
+                            <p class="article__desc">This is the easiest way to quickly get a CARTO map onto your webpage. Use this method when there is no map in your application, and you want to add the visualization to hack over it. CARTO.js handles all the details of loading a map interface, basemap, and your CARTO visualization.
+                                You can start by giving CARTO.js the DIV ID from your HTML where you want to place your map, and the viz.json URL of your visualization (which you can get from the Publish your map options).</p>
+                        </section>
                     </article>
 
                     <article class="article">
-                        <h3 class="article__title">Next steps</h3>
-                        <p class="article__desc">Once the form, with the stored payment token, is submitted to your server, you'll want to use the payment details just collected. Usually this means one of three actions:
-                        </p>
-                        <div class="article__card light">
-                            <svg class="icon icon--info" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 472.811 472.811" xmlns:xlink="http://www.w3.org/1999/xlink" enable-background="new 0 0 472.811 472.811">
-                                <path style="fill:#73C86B;" d="M358.75,0H114.061C97.555,0,84.128,13.428,84.128,29.934v412.944c0,16.505,13.428,29.934,29.934,29.934H358.75   c16.506,0,29.934-13.428,29.934-29.934V29.934C388.683,13.428,375.256,0,358.75,0z M99.128,75.236h274.556v312.687H99.128V75.236z    M114.061,15H358.75c8.234,0,14.934,6.699,14.934,14.934v35.302H99.128V29.934C99.128,21.699,105.827,15,114.061,15z    M358.75,457.811H114.061c-8.234,0-14.934-6.699-14.934-14.934v-44.955h274.556v44.955   C373.683,451.112,366.984,457.811,358.75,457.811z"/>
-                                <path style="fill:#73C86B;" d="m236.406,404.552c-13.545,0-24.564,11.02-24.564,24.565s11.02,24.564 24.564,24.564 24.564-11.02 24.564-24.564-11.019-24.565-24.564-24.565zm0,39.129c-8.031,0-14.564-6.534-14.564-14.564 0-8.031 6.533-14.565 14.564-14.565s14.564,6.534 14.564,14.565c0,8.03-6.533,14.564-14.564,14.564z"/>
-                                <path style="fill:#73C86B;" d="m202.406,47.645h68c2.762,0 5-2.239 5-5s-2.238-5-5-5h-68c-2.762,0-5,2.239-5,5s2.238,5 5,5z"/>
-                                <path style="fill:#73C86B;" d="m184.409,47.645c1.31,0 2.6-0.53 3.53-1.46 0.93-0.94 1.47-2.22 1.47-3.54s-0.54-2.6-1.47-3.54c-0.931-0.93-2.221-1.46-3.53-1.46-1.32,0-2.601,0.53-3.54,1.46-0.93,0.93-1.46,2.22-1.46,3.54s0.53,2.6 1.46,3.54c0.93,0.93 2.22,1.46 3.54,1.46z"/>
-                            </svg>
-                            <span class="article__card__text">
-                                <span class="article__card--title">General Concepts</span>
-                                <span class="article__card--desc">Give your mobile or tablets apps the power of interactive maps.</span>
-                            </span>
-                        </div>
+                        <section class="article__section">
+                            <h3 class="article__title">Next steps</h3>
+                            <p class="article__desc">Once the form, with the stored payment token, is submitted to your server, you'll want to use the payment details just collected. Usually this means one of three actions:
+                            </p>
+                            <div class="article__card light">
+                                <svg class="icon icon--info" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 472.811 472.811" xmlns:xlink="http://www.w3.org/1999/xlink" enable-background="new 0 0 472.811 472.811">
+                                    <path style="fill:#73C86B;" d="M358.75,0H114.061C97.555,0,84.128,13.428,84.128,29.934v412.944c0,16.505,13.428,29.934,29.934,29.934H358.75   c16.506,0,29.934-13.428,29.934-29.934V29.934C388.683,13.428,375.256,0,358.75,0z M99.128,75.236h274.556v312.687H99.128V75.236z    M114.061,15H358.75c8.234,0,14.934,6.699,14.934,14.934v35.302H99.128V29.934C99.128,21.699,105.827,15,114.061,15z    M358.75,457.811H114.061c-8.234,0-14.934-6.699-14.934-14.934v-44.955h274.556v44.955   C373.683,451.112,366.984,457.811,358.75,457.811z"/>
+                                    <path style="fill:#73C86B;" d="m236.406,404.552c-13.545,0-24.564,11.02-24.564,24.565s11.02,24.564 24.564,24.564 24.564-11.02 24.564-24.564-11.019-24.565-24.564-24.565zm0,39.129c-8.031,0-14.564-6.534-14.564-14.564 0-8.031 6.533-14.565 14.564-14.565s14.564,6.534 14.564,14.565c0,8.03-6.533,14.564-14.564,14.564z"/>
+                                    <path style="fill:#73C86B;" d="m202.406,47.645h68c2.762,0 5-2.239 5-5s-2.238-5-5-5h-68c-2.762,0-5,2.239-5,5s2.238,5 5,5z"/>
+                                    <path style="fill:#73C86B;" d="m184.409,47.645c1.31,0 2.6-0.53 3.53-1.46 0.93-0.94 1.47-2.22 1.47-3.54s-0.54-2.6-1.47-3.54c-0.931-0.93-2.221-1.46-3.53-1.46-1.32,0-2.601,0.53-3.54,1.46-0.93,0.93-1.46,2.22-1.46,3.54s0.53,2.6 1.46,3.54c0.93,0.93 2.22,1.46 3.54,1.46z"/>
+                                </svg>
+                                <span class="article__card__text">
+                                    <span class="article__card--title">General Concepts</span>
+                                    <span class="article__card--desc">Give your mobile or tablets apps the power of interactive maps.</span>
+                                </span>
+                            </div>
+                        </section>
                     </article>
 
                     <article class="article">
-                        <h3 class="article__title">Questions?</h3>
-                        <p class="article__desc">We're always happy to help with code or other questions you might have! Search our site for more information or <a href="mailto:anywhere@example.com">send us an email</a>!</p>
+                        <section class="article__section">
+                            <h3 class="article__title">Questions?</h3>
+                            <p class="article__desc">We're always happy to help with code or other questions you might have! Search our site for more information or <a href="mailto:anywhere@example.com">send us an email</a>!</p>
+                        </section>
                     </article>
                 </main>
             </div>

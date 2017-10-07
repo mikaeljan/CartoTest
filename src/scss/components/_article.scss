@@ -10,11 +10,14 @@
 }
 .article {
   font-size: $text-normal--sm;
-  margin-bottom:em(35px);
+  margin-bottom:em(15px);
   color: $nile-blue;
   @include mq("tablet") {
-    padding: em(10px);
+    padding-bottom: em(10px);
     font-size: $text-normal--md;
+  }
+  @include e("section"){
+    margin: em(45px) 0;
   }
   @include e('card'){
     display: flex;
@@ -25,7 +28,6 @@
     box-shadow: 0 1px 2px rgba(0,0,0,0.15);
     margin: em(20px) 0;
     @include m('link') {
-
     }
     @include m("icon"){
       margin:0 em(20px);
@@ -49,7 +51,6 @@
       text-decoration: none;
     }
     @include m('desc'){
-
       line-height: $line-height--sm;
       font-family: "Open Sans", Helvetica, Arial, sans-serif;
       font-size: $text-normal--sm;
@@ -69,6 +70,7 @@
 // Different variations of article__title separated for nesting purposes
 .article__title {
   @include m("lg"){
+    margin:0;
     font-size: 17px;
     font-weight: $font-weight--xbold;
   }
@@ -79,6 +81,7 @@
 }
 // If articles are located in main section
 .main__section .article .article__desc {
+  margin: 15px 0;
   color:$color--prim;
 }
 

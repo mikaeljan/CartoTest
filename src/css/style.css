@@ -810,12 +810,14 @@ img {
 
 .article {
   font-size: 13px;
-  margin-bottom: 1.9444444444em;
+  margin-bottom: 0.8333333333em;
   color: #1B3558; }
   @media (min-width: 768px) {
     .article {
-      padding: 0.5555555556em;
+      padding-bottom: 0.5555555556em;
       font-size: 15px; } }
+  .article__section {
+    margin: 2.5em 0; }
   .article__card {
     display: flex;
     align-items: center;
@@ -855,6 +857,7 @@ img {
       background-color: #DDDDDD; }
 
 .article__title--lg {
+  margin: 0;
   font-size: 17px;
   font-weight: 700; }
 .article__title--sm {
@@ -862,6 +865,7 @@ img {
   font-weight: 400; }
 
 .main__section .article .article__desc {
+  margin: 15px 0;
   color: #162745; }
 
 .main__section .article .article__title {
