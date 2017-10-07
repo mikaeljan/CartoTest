@@ -692,6 +692,9 @@ header {
 .nav--side > .nav__item:first-child {
   margin-top: 0; }
 
+.dark {
+  background-color: #162745; }
+
 .light {
   background-color: #F9F9F9; }
 

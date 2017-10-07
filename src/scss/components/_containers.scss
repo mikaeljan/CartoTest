@@ -4,6 +4,11 @@
 .container {
   @extend %container;
   }
+
+.dark {
+  background-color: $color--bg--dark;
+}
+
 .light {
   background-color: $color--bg--light;
 }

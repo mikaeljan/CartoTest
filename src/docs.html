@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5, user-scalable=0"/>
+    <title>ACME CORP.</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="white">
+    <div class="wrapper">
+        <div class="header__main">
+                <img class="header__logo" src="img/logo.png" alt="logo">
+            <span class="header__title"><strong>ACME</strong> CORP.</span>
+            <nav role="navigation">
+                <div id="menuToggle">
+                    <!--
+                    A fake / hidden checkbox is used as click receiver,
+                    so you can use the :checked selector on it.
+                    -->
+                    <input type="checkbox" />
+                    <!--These will represent the hamburger icon-->
+                    <span></span>
+                    <span></span>
+                    <span></span>
+
+                    <nav class="menu">
+                        <div class="menu__list">
+                            <a class="nav-item" href="">Builder</a>
+                            <a class="nav-item" href="">Engine</a>
+                            <a class="nav-item" href="">Solutions
+                                <svg class="icon icon--arrow" viewBox="0 0 6 3" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                            class="path" fill="#162945" d="M2.62 2.738L3 3l.38-.262 2.113-1.456L6 .932 5.24 0 4.73.35 2.994 1.54 1.268.35.76 0 0 .932l.507.35L2.62 2.738" fill-rule="evenodd">
+                                    </path>
+                                </svg>
+                            </a>
+                            <a class="nav-item" href="">Pricing</a>
+                            <a class="nav-item" href="">Blog</a>
+                        </div>
+                        <div class="menu__list menu--left">
+                            <a class="nav-item" href="">Login</a>
+                            <a class="nav-item" href="">Contact us</a>
+                        </div>
+                    </nav>
+                </div>
+            </nav>
+        </div>
+    </div> <!--End wrapper-->
+</header>
+    <div class="wrapper">
+        <nav class="nav--sec grid__col--12">
+            <a class="nav__item active" href="">Documentation</a>
+            <a class="nav__item" href="">Guides</a>
+            <a class="nav__item" href="">Tutorials</a>
+            <a class="nav__item" href="">Support</a>
+        </nav>
+    </div>
+    <div class="container light">
+        <div class="wrapper">
+            <main class="main__section grid__col--12">
+                <h1 class="title">DOCUMENTATION</h1>
+                <p class="desc">Learn all about the CARTO Engine. An Open Source tool that enables you to use several APIs to build advanced, dynamic geospatial datasets and scalable maps for your own applications.</p>
+                <input class="input--search" type="search" placeholder="Search the docs">
+                <span>
+                    <svg class="icon icon--search" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 451 451" style="enable-background:new 0 0 451 451;" xml:space="preserve" width="512px" height="512px">
+                        <path class="path" d="M447.05,428l-109.6-109.6c29.4-33.8,47.2-77.9,47.2-126.1C384.65,86.2,298.35,0,192.35,0C86.25,0,0.05,86.3,0.05,192.3   s86.3,192.3,192.3,192.3c48.2,0,92.3-17.8,126.1-47.2L428.05,447c2.6,2.6,6.1,4,9.5,4s6.9-1.3,9.5-4   C452.25,441.8,452.25,433.2,447.05,428z M26.95,192.3c0-91.2,74.2-165.3,165.3-165.3c91.2,0,165.3,74.2,165.3,165.3   s-74.1,165.4-165.3,165.4C101.15,357.7,26.95,283.5,26.95,192.3z" fill="#FFFFFF"/>
+                    </svg>
+                </span>
+            </main>
+        </div>
+        <div class="wrapper">
+            <section class="articles grid__col--12">
+                <article class="article grid__col--4">
+                    <h3 class="article__title">Engine</h3>
+                    <p class="article__desc">An Open Source tool that enables you to use several APIs to build advanced, dynamic geospatial datasets and scalable maps for your own applications.</p>
+                    <a href="#" class="article__card white">
+                        <svg class="icon article__card--icon" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+         viewBox="0 0 469.333 469.333" style="enable-background:new 0 0 469.333 469.333;" xml:space="preserve">
+                            <path class="path" d="M458.667,181.333c5.896,0,10.667-4.771,10.667-10.667S464.563,160,458.667,160h-32v-42.667h32
+                    c5.896,0,10.667-4.771,10.667-10.667S464.563,96,458.667,96h-32V85.333c0-23.521-19.135-42.667-42.667-42.667h-10.667v-32
+                    C373.333,4.771,368.563,0,362.667,0C356.771,0,352,4.771,352,10.667v32h-42.667v-32C309.333,4.771,304.562,0,298.667,0
+                    S288,4.771,288,10.667v32h-42.667v-32C245.333,4.771,240.562,0,234.667,0S224,4.771,224,10.667v32h-42.667v-32
+                    C181.333,4.771,176.562,0,170.667,0S160,4.771,160,10.667v32h-42.667v-32C117.333,4.771,112.562,0,106.667,0S96,4.771,96,10.667
+                    v32H85.333c-23.531,0-42.667,19.146-42.667,42.667V96h-32C4.771,96,0,100.771,0,106.667s4.771,10.667,10.667,10.667h32V160h-32
+                    C4.771,160,0,164.771,0,170.667s4.771,10.667,10.667,10.667h32V224h-32C4.771,224,0,228.771,0,234.667
+                    s4.771,10.667,10.667,10.667h32V288h-32C4.771,288,0,292.771,0,298.667s4.771,10.667,10.667,10.667h32V352h-32
+                    C4.771,352,0,356.771,0,362.667c0,5.896,4.771,10.667,10.667,10.667h32V384c0,23.521,19.135,42.667,42.667,42.667H96v32
+                    c0,5.896,4.771,10.667,10.667,10.667s10.667-4.771,10.667-10.667v-32H160v32c0,5.896,4.771,10.667,10.667,10.667
+                    s10.667-4.771,10.667-10.667v-32H224v32c0,5.896,4.771,10.667,10.667,10.667s10.667-4.771,10.667-10.667v-32H288v32
+                    c0,5.896,4.771,10.667,10.667,10.667s10.667-4.771,10.667-10.667v-32H352v32c0,5.896,4.771,10.667,10.667,10.667
+                    c5.896,0,10.667-4.771,10.667-10.667v-32H384c23.531,0,42.667-19.146,42.667-42.667v-10.667h32
+                    c5.896,0,10.667-4.771,10.667-10.667c0-5.896-4.771-10.667-10.667-10.667h-32v-42.667h32c5.896,0,10.667-4.771,10.667-10.667
+                    S464.563,288,458.667,288h-32v-42.667h32c5.896,0,10.667-4.771,10.667-10.667S464.563,224,458.667,224h-32v-42.667H458.667z
+                     M405.333,384c0,11.771-9.573,21.333-21.333,21.333H85.333C73.573,405.333,64,395.771,64,384V85.333
+                    C64,73.562,73.573,64,85.333,64H384c11.76,0,21.333,9.563,21.333,21.333V384z"/>
+                            <path class="path" d="M373.333,85.333H96c-5.896,0-10.667,4.771-10.667,10.667v277.333C85.333,379.229,90.104,384,96,384h277.333
+                    c5.896,0,10.667-4.771,10.667-10.667V96C384,90.104,379.229,85.333,373.333,85.333z M362.667,362.667h-256v-256h256V362.667z"/>
+                            <path class="path" d="M186.667,298.667c20.583,0,37.333-16.75,37.333-37.333C224,240.75,207.25,224,186.667,224
+                    c-5.447,0-10.589,1.236-15.259,3.342c3.496-20.03,20.904-35.342,41.926-35.342c5.896,0,10.667-4.771,10.667-10.667
+                    c0-5.896-4.771-10.667-10.667-10.667c-35.292,0-64,28.708-64,64V256c0,0.633,0.254,1.181,0.359,1.783
+                    c-0.115,1.186-0.359,2.335-0.359,3.551C149.333,281.917,166.083,298.667,186.667,298.667z M186.667,245.333
+                    c8.823,0,16,7.188,16,16c0,8.813-7.177,16-16,16s-16-7.188-16-16C170.667,252.521,177.844,245.333,186.667,245.333z"/>
+                            <path class="path" d="M256.021,266.687l42.646-0.017V288c0,5.896,4.771,10.667,10.667,10.667c5.896,0,10.667-4.771,10.667-10.667v-53.333
+                    c0-5.896-4.771-10.667-10.667-10.667c-5.896,0-10.667,4.771-10.667,10.667v10.673l-24.271,0.014l33.531-58.729
+                    c2.927-5.125,1.146-11.625-3.969-14.563c-5.146-2.875-11.625-1.125-14.552,3.979l-42.646,74.688
+                    c-1.885,3.313-1.875,7.354,0.042,10.646C248.708,264.667,252.219,266.687,256.021,266.687z"/>
+                        </svg>
+                        <span class="article__card--title">
+                            CARTO.js
+                        </span>
+                    </a>
+                </article>
+                <article class="article grid__col--4">
+                    <h3 class="article__title">Location Data Services</h3>
+                    <p class="article__desc">An Open Source tool that enables you to use several APIs to build advanced, dynamic geospatial datasets and scalable maps for your own applications.</p>
+                    <a href="tutorial.html" class="article__card white">
+                        <!--<svg class="article__card&#45;&#45;icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 490 490" style="enable-background:new 0 0 490 490;" xml:space="preserve">-->
+                            <!--<ellipse class="path" cx="109.58" cy="110.149" rx="36.414" ry="36.603" fill="#FFFFFF"/>-->
+                            <!--<path class="path" d="M380.42,171.016c-60.52,0-109.581,49.316-109.581,110.149c0,44.337,26.117,82.453,63.68,99.921   c0.54,1.867,1.13,3.761,1.717,5.652H124.84v-98.671c9.044-19.329,22.602-50.254,30.629-77.993   c37.569-17.465,63.691-55.585,63.691-99.925C219.161,49.315,170.1,0,109.58,0C49.061,0,0,49.315,0,110.149   c0,44.337,26.117,82.453,63.68,99.92c7.992,27.642,21.475,58.429,30.535,77.769v129.525h252.9   c11.504,29.226,24.368,54.98,26.882,59.911L380.42,490l6.463-12.726c3.506-6.983,27.544-55.124,39.426-96.183   C463.878,363.626,490,325.506,490,281.165C490,220.332,440.94,171.016,380.42,171.016z M89.23,188.176l-12.636-5.876   c-27.924-12.985-45.968-41.307-45.968-72.151c0-43.85,35.42-79.524,78.955-79.524c43.536,0,78.955,35.674,78.955,79.524   c0,30.848-18.047,59.171-45.976,72.154l-12.635,5.873l-3.873,13.385c-4.281,14.796-10.4,30.876-16.482,45.407   c-6.045-14.436-12.166-30.52-16.469-45.405L89.23,188.176z M413.399,353.32l-12.634,5.874l-3.873,13.384   c-4.281,14.794-10.4,30.876-16.482,45.407c-6.045-14.436-12.165-30.518-16.469-45.405l-3.871-13.387l-12.636-5.876   c-27.924-12.986-45.968-41.307-45.968-72.151c0-43.85,35.42-79.524,78.956-79.524c43.536,0,78.955,35.674,78.955,79.524   C459.375,312.014,441.328,340.336,413.399,353.32z" fill="#FFFFFF"/>-->
+                            <!--<ellipse cx="380.419" class="path" cy="281.165" rx="36.414" ry="36.603" fill="#FFFFFF"/>-->
+                        <!--</svg>-->
+                        <svg class="article__card--icon" viewBox="0 0 91 98" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"> <g id="Page-1" stroke="none" stroke-width="1" fill="#fff" fill-rule="evenodd" sketch:type="MSPage"> <g id="geocoder-icon" sketch:type="MSLayerGroup" transform="translate(2.000000, 2.000000)" stroke-width="4" stroke="#73C86B"> <path d="M35,17.4549078 C35,27.0931739 17.5,48 17.5,48 C17.5,48 0,27.0931739 0,17.4549078 C0,7.81664175 7.83283855,0 17.5,0 C27.1671615,0 35,7.81664175 35,17.4549078 L35,17.4549078 L35,17.4549078 Z" id="Stroke-1738"></path> <path d="M24,17.5 C24,21.0904385 21.0864799,24 17.4960414,24 C13.9056029,24 11,21.0904385 11,17.5 C11,13.9095615 13.9056029,11 17.4960414,11 C21.0864799,11 24,13.9095615 24,17.5 L24,17.5 L24,17.5 Z" id="Stroke-1739"></path> <path d="M87,61.4549078 C87,71.0931739 69.5,92 69.5,92 C69.5,92 52,71.0931739 52,61.4549078 C52,51.8166418 59.8328385,44 69.5,44 C79.1671615,44 87,51.8166418 87,61.4549078 L87,61.4549078 L87,61.4549078 Z" id="Stroke-1740"></path> <path d="M76,61.5 C76,65.0904385 73.0864799,68 69.4960414,68 C65.9056029,68 63,65.0904385 63,61.5 C63,57.9095615 65.9056029,55 69.4960414,55 C73.0864799,55 76,57.9095615 76,61.5 L76,61.5 L76,61.5 Z" id="Stroke-1741"></path> <path d="M22,93 L18,93 L18,89" id="Stroke-1742"></path> <path d="M54,93 L58,93" id="Stroke-1743"></path> <path d="M42,93 L46,93" id="Stroke-1744"></path> <path d="M30,93 L34,93" id="Stroke-1745"></path> <path d="M18,53 L18,57" id="Stroke-1746"></path> <path d="M18,65 L18,69" id="Stroke-1747"></path> <path d="M18,77 L18,81" id="Stroke-1748"></path> </g> </g> </svg>
+
+                        <span class="article__card--title">
+                            Routing
+                        </span>
+                        <span class="article__card--api">
+                            API
+                        </span>
+                    </a>
+                </article>
+                <article class="article grid__col--4">
+                    <h3 class="article__title">Builder</h3>
+                    <p class="article__desc">An Open Source tool that enables you to use several APIs to build advanced, dynamic geospatial datasets and scalable maps for your own applications.</p>
+                    <a href="#" class="article__card white">
+                        <svg class=article__card--icon xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 480 480" style="enable-background:new 0 0 480 480;" xml:space="preserve" class=""><g transform="matrix(-1 0 0 1 480 0)"><g>
+                            <path d="M0,32v352h416V32H0z M384,352H32v-87.68L110.88,320l176-96L384,296.8V352z M384,261.6l-94.56-71.04l-176,96L32,230.08V64    h352V261.6z" data-original="#000000" class="active-path" data-old_color="#19FF00" fill="#73C86B"/>
+                            <polygon points="448,96 448,416 64,416 64,448 480,448 480,96   " data-original="#000000" class="active-path" data-old_color="#19FF00" fill="#73C86B"/>
+                            <path d="M104,96c-22.091,0-40,17.909-40,40s17.909,40,40,40s40-17.909,40-40S126.091,96,104,96z M104.319,154.239    c-9.985,0.088-18.151-7.935-18.239-17.92c-0.001-0.106-0.001-0.212,0-0.319c0.087-9.861,8.059-17.833,17.92-17.92    c9.985-0.088,18.151,7.935,18.239,17.92C122.327,145.985,114.304,154.151,104.319,154.239z" data-original="#000000" class="active-path" data-old_color="#19FF00" fill="#73C86B"/>
+                        </svg>
+
+                        <span class="article__card--title">
+                            Static
+                        </span>
+                        <span class="article__card--api">
+                            API
+                        </span>
+                    </a>
+                </article>
+            </section>
+        </div>
+    </div> <!--Container light end-->
+
+</body>
+</html>
