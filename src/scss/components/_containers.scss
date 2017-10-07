@@ -1,11 +1,20 @@
 // ======================================
 //  Containers
 // ======================================
+.container {
+  @include m('light'){
+    @extend %container;
+  }
+  @include m("white"){
+    @extend %container;
+    background-color: $color--bg;
+  }
+}
 .wrapper {
   display: flex;
   justify-content: center;
   max-width: 960px;
-  margin: 0 auto em(40px);
+  margin: 0 auto;
   padding: 0 em(24px);
 }
 

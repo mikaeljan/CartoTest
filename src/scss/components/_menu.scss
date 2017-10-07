@@ -164,7 +164,7 @@ nav {
 // Secondary menu located under the header section
 .nav--sec {
   display:flex;
-  margin: -80px 0 em(120px) 0;
+  margin:0;
   flex-wrap: wrap;
   border-bottom: 1px solid $color--border;
   & .nav__item {

@@ -27,6 +27,9 @@ nav {
   display: flex;
   font-size: 13px; }
 
+.container--light, .container--white {
+  padding-top: 80px; }
+
 /*! normalize.css v5.0.0 | MIT License | github.com/necolas/normalize.css */
 /**
  * 1. Change the default font family in all browsers (opinionated).
@@ -501,8 +504,7 @@ td:first-child {
 
 header {
   background-color: #fff;
-  border-bottom: 1px solid #EEEEEE;
-  margin-bottom: 80px; }
+  border-bottom: 1px solid #EEEEEE; }
   header .wrapper {
     margin-bottom: 0; }
 
@@ -668,7 +670,7 @@ header {
 
 .nav--sec {
   display: flex;
-  margin: -80px 0 6.6666666667em 0;
+  margin: 0;
   flex-wrap: wrap;
   border-bottom: 1px solid #EEEEEE; }
   .nav--sec .nav__item {
@@ -692,11 +694,14 @@ header {
 .nav--side > .nav__item:first-child {
   margin-top: 0; }
 
+.container--white {
+  background-color: #fff; }
+
 .wrapper {
   display: flex;
   justify-content: center;
   max-width: 960px;
-  margin: 0 auto 2.2222222222em;
+  margin: 0 auto;
   padding: 0 1.3333333333em; }
 
 .side-bar {
@@ -770,9 +775,6 @@ img {
     align-self: flex-start; }
   .icon--arrow {
     padding: 0.1111111111em; }
-    @media (min-width: 768px) {
-      .icon--arrow {
-        padding: 0.4444444444em; } }
     .icon--arrow .path {
       fill: #fff; }
       @media (min-width: 768px) {
