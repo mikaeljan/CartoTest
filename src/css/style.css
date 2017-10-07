@@ -477,6 +477,11 @@ p {
 .article__card--text {
   font-size: 15px; }
 
+.info__card--text {
+  line-height: 24px;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  font-size: 13px; }
+
 .side-bar {
   font-size: 13px;
   font-family: "Open Sans", Helvetica, Arial, sans-serif; }
@@ -488,8 +493,11 @@ p {
     font-weight: 600; }
 
 .table {
-  font-family: "PT Mono", Helvetica, Arial, sans-serif;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
   font-size: 13px; }
+
+td:first-child {
+  font-family: "PT Mono", Helvetica, Arial, sans-serif; }
 
 header {
   background-color: #fff;
@@ -602,6 +610,7 @@ header {
  */
 .menu {
   color: #fff;
+  font-weight: 600;
   width: 768px;
   position: absolute;
   display: none;
@@ -754,8 +763,11 @@ img {
   margin-left: -8px; }
 
 .icon {
-  width: 11px;
-  height: 11px; }
+  width: 12px;
+  padding: 0.1111111111em; }
+  .icon--info {
+    min-width: 24px;
+    align-self: flex-start; }
   .icon--arrow {
     padding: 0.1111111111em; }
     @media (min-width: 768px) {
@@ -831,6 +843,19 @@ img {
       margin-left: auto;
       padding: 0 1.1111111111em;
       background-color: #DDDDDD; }
+
+.info__card {
+  display: flex;
+  align-items: center;
+  align-self: flex-end;
+  width: 100%;
+  padding: 0.8333333333em;
+  border-radius: 4px;
+  background-color: #F6FFF5;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+  margin: 1.1111111111em 0; }
+  .info__card--text {
+    margin: auto 10px; }
 
 .table {
   text-align: left;
