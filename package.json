@@ -9,9 +9,7 @@
   "keywords": [],
   "author": "Michal Janek",
   "license": "ISC",
-  "dependencies": {
-    "express": "^4.16.1"
-  },
+  "dependencies": {},
   "devDependencies": {
     "del": "^3.0.0",
     "gulp": "^3.9.1",

@@ -14,30 +14,30 @@ Two versions of my take on Code Test from CARTO
 4. `distE/` has optimalized Express.js version of the project
 
 ## How to run
-1. For running Vanilla version: just open index.html in `src/` or `dist/`. Depends whether you want optimalized version or not.
-2. For running Express.js version, please make sure you have [Node.JS](https://nodejs.org/) installed.
-    1. Open command line and navigate yourself either to the `srcE/` or `distE/` and run `npm install` then `node app`.
-    2. The server should run on port 3000.
+###  Vanilla
+For running Vanilla version: just open index.html in `src/` or `dist/`.
+Depends whether you want optimalized version or not.
 
-## To do
-1. Ked budes mat basic styles hotove a bude to vyzerat ako na obr<br>tak to vsetko ostava kde? SRC Files. Nezabudni prekonvertovat sass na css
+### Express.js 
+For running Express.js version, please make sure you have [NodeJS](https://nodejs.org/) installed.
+1. Open command line and navigate yourself either to the `srcE/` or `distE/` and run `npm install` then `node app`.<br/>
+Depends whether you want optimalized version or not.
+2. The server should run on port 3000.
 
-3. Kedy vsunut Gulpfile na building? (gulp by mal vytvorit podmienky tak ze len stlacim v dist subore node app a pojde to.) 
-    1. Gulp musi - minify CSS, minify JS (ale iba ten co tam chceme davat a to MOZNO nie je ziaden)
-    2. Compress images
-    3. Vytvorit dist folder
-    
+Note: The Express.js version will have already minified CSS provided. The original css/sass files can be found in Vanilla's `src` folder.
+
+## To Do
 
 ### Notes during Code Test
-0. The very first page with CODE TEST made as an separate .html can be also only an overlay of the next page DOCUMENTATION and after clicking it hides showing the page.
+1. The very first page with CODE TEST made as an separate .html can be also an overlay of the next page DOCUMENTATION instead and after clicking it, it hides and shows the page.
 
-1. Made a custom grid system in Sass, was considering using some already created online, decided against it for practicing purposes.
+2. Made a custom grid system in Sass, was considering using some already created online, decided against it for practicing purposes.
 
-2. SVGs are inline in order to save requests to the server.
+3. SVGs are inline in order to save requests to the server.
 
-3. Since it was suggested not use jQuery I did my first take on making custom non-jQuery/JS hambuger menu with only CSS. The result was clumsy and very specific to this navigation, took a lot of experimenting and custom styling. Might reconsider this approach next time.
+4. Since it was suggested not use jQuery I did my first take on making custom non-jQuery/JS hambuger menu with only CSS. The result was clumsy and very specific to this navigation, took a lot of experimenting and custom styling.
 
-4. Furthemore, I would use a JS dropdown variation on menus to enable navigating.
+5. Furthemore, I would use a JS dropdown variation on menus to enable navigating.
 
 ## Contact
 For any questions, please feel free to contact me:<br />

@@ -62,30 +62,5 @@ gulp.task("default", ["clean"], ()=>{
 // ====== End Vanilla v. ======
 
 // ====== For Express.js v. ======
-gulp.task('imagesE',[], function() {
-    return gulp.src(options.srcE + '/img/**/*+(png|jpg|gif|svg)')
-        .pipe(imagemin())
-        .pipe(gulp.dest(options.distE + '/img'))
-});
-// For cleaning the Express. dist folder
-gulp.task('cleanE', function() {
-    del([options.distE, options.srcE+'/css/styles.min.css',options.srcE+'/js/main.min.js',]);
-});
-
-// Useref task + minifying CSS and JS
-gulp.task('useref',["images"], function(){
-    return gulp.src(options.srcE +'/*.html')
-        .pipe(useref())
-        // Minifies only if it's a JS file
-        .pipe(gulpIf('*.js', uglify()))
-        // Minifies only if it's a CSS file
-        .pipe(gulpIf('*.css', csso()))
-        .pipe(gulp.dest(options.distE));
-});
-
-gulp.task("buildE", ['inlineSource'], function() {
-    return gulp.src([],{ base: './'}).
-    pipe(gulp.dest(options.distE));
-});
 
 // ====== End Express.js . ======

@@ -2,3 +2,4 @@
 *.iml
 /src/.sass-cache/
 /node_modules/
+/srcE/node_modules/
