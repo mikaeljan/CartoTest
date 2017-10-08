@@ -1,0 +1,31 @@
+header.white
+    .wrapper
+        .header__main
+            img.header__logo(src='/static/img/logo.png', alt='logo')
+            span.header__title
+                strong ACME
+                |  CORP.
+            nav(role='navigation')
+                #menuToggle
+                    //
+                        A fake / hidden checkbox is used as click receiver,
+                        so you can use the :checked selector on it.
+                    input(type='checkbox')
+                    // These will represent the hamburger icon
+                    span
+                    span
+                    span
+                    nav.menu
+                        .menu__list
+                            a.nav-item(href='') Builder
+                            a.nav-item(href='') Engine
+                            a.nav-item(href='')
+                                | Solutions
+                                svg.icon.icon--arrow(viewbox='0 0 6 3', xmlns='http://www.w3.org/2000/svg')
+                                    path.path(fill='#162945', d='M2.62 2.738L3 3l.38-.262 2.113-1.456L6 .932 5.24 0 4.73.35 2.994 1.54 1.268.35.76 0 0 .932l.507.35L2.62 2.738', fill-rule='evenodd')
+                            a.nav-item(href='') Pricing
+                            a.nav-item(href='') Blog
+                        .menu__list.menu--left
+                            a.nav-item(href='') Login
+                            a.nav-item(href='') Contact us
+    // End wrapper

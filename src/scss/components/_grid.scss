@@ -3,7 +3,6 @@
 // ======================================
 .grid {
   @include e(col){
-
     @include g-width;
   }
 }

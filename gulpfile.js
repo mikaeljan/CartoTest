@@ -1,8 +1,13 @@
 "use strict";
 /*
-Now there is a lot of repetition here since I included two Gulpfiles into one
-Normally I would ship this into separate projects, but do not want to send two separate repos.
+This Gulp will have tasks suited only for the Vanilla version, due to the fact that
+I will use the resulting minified scripts/styles as a
+source files for the Express.js version, therefore there is no need for separate gulp files.
+
+For clarity purposes I am not going to minify Express.js .pug templates since it is not a huge project
+and there is no JS (yet).
  */
+
 const gulp          = require('gulp'),
     uglify          = require('gulp-uglify'),
     useref          = require('gulp-useref'),
@@ -15,7 +20,7 @@ const gulp          = require('gulp'),
 const options = {
     src: 'src',
     dist: 'dist',
-    //For Express.js v.
+    //For future Express.js v.
     srcE: 'srcE',
     distE: 'distE',
 };
@@ -62,5 +67,5 @@ gulp.task("default", ["clean"], ()=>{
 // ====== End Vanilla v. ======
 
 // ====== For Express.js v. ======
-
+// To be continued.
 // ====== End Express.js . ======

@@ -711,45 +711,48 @@ header {
   margin: 0 auto;
   padding: 0 1.3333333333em; }
 
+.main__section {
+  margin-bottom: 2.2222222222em; }
+
 .side-bar {
   margin-right: 1.3888888889em;
   min-width: 210px; }
 
 .grid__col--1 {
-  flex-basis: 8.333%;
+  flex-basis: 8%;
   flex-grow: 1; }
 .grid__col--2 {
-  flex-basis: 16.666%;
+  flex-basis: 16%;
   flex-grow: 1; }
 .grid__col--3 {
-  flex-basis: 24.999%;
+  flex-basis: 24%;
   flex-grow: 1; }
 .grid__col--4 {
-  flex-basis: 33.332%;
+  flex-basis: 32%;
   flex-grow: 1; }
 .grid__col--5 {
-  flex-basis: 41.665%;
+  flex-basis: 40%;
   flex-grow: 1; }
 .grid__col--6 {
-  flex-basis: 49.998%;
+  flex-basis: 48%;
   flex-grow: 1; }
 .grid__col--7 {
-  flex-basis: 58.331%;
+  flex-basis: 56%;
   flex-grow: 1; }
 .grid__col--8 {
-  flex-basis: 66.664%;
+  flex-basis: 64%;
   flex-grow: 1; }
 .grid__col--9 {
-  flex-basis: 74.997%;
+  flex-basis: 72%;
   flex-grow: 1; }
 .grid__col--10 {
-  flex-basis: 83.33%;
+  flex-basis: 80%;
   flex-grow: 1; }
 .grid__col--11 {
-  flex-basis: 91.663%;
+  flex-basis: 88%;
   flex-grow: 1; }
 .grid__col--12 {
-  flex-basis: 99.996%;
+  flex-basis: 96%;
   flex-grow: 1; }
 
 .input--search {
@@ -816,26 +819,29 @@ img {
   margin-bottom: 0.8333333333em;
   color: #1B3558; }
   @media (min-width: 768px) {
+    .article--center {
+      margin-right: 20px;
+      margin-left: 20px; } }
+  @media (min-width: 768px) {
     .article {
       padding-bottom: 0.5555555556em;
       font-size: 15px; } }
   .article__section {
-    margin: 2.5em 0; }
+    margin-bottom: 2.5em; }
   .article__card {
     display: flex;
     align-items: center;
     align-self: flex-end;
-    padding: 1.3888888889em;
+    padding: 1.1111111111em;
     border-radius: 4px;
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
     margin: 1.1111111111em 0; }
     .article__card--icon {
-      margin: 0 1.1111111111em;
+      margin: 0 1.6666666667em 0 0.5555555556em;
       width: 40px; }
       @media (min-width: 768px) {
         .article__card--icon {
-          width: 24px;
-          height: 24px; } }
+          width: 24px; } }
       .article__card--icon .path {
         fill: #73C86B; }
     .article__card__text {

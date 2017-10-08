@@ -8,15 +8,21 @@ app.use("/static", express.static('public'));
 app.set('view engine', 'pug');
 
 app.get("/", (req, res)=>{
-    res.render("index");
+    res.render("index", {
+        title: "Code Test"
+    });
 });
 
 app.get("/docs", (req, res)=> {
-    res.render("docs");
+    res.render("docs", {
+        title: "Documentation"
+    });
 });
 
 app.get("/tutorial", (req, res)=> {
-    res.render("tutorial", {});
+    res.render("tutorial", {
+        title: "Tutorial"
+    });
 });
 
 app.listen(3000, ()=>{

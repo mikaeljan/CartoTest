@@ -1,5 +1,5 @@
 // ======================================
-//  Containers
+//  Containers (general ones, articles have their own scss)
 // ======================================
 .container {
   @extend %container;
@@ -25,7 +25,9 @@
   margin: 0 auto;
   padding: 0 em(24px);
 }
-
+.main__section {
+  margin-bottom: em(40px);
+}
 .side-bar {
   margin-right:em(25px);
   min-width: 210px;
