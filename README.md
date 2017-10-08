@@ -11,7 +11,7 @@ Two versions of my take on Code Test from CARTO
 1. `src/` has all the files I used for building the project from scratch - not optimalized
 2. `dist/` has optimalized files, minified scripts etc.
 3. `srcE/` has source files for Express.js version of the project (uses Pug.js templating engine)
-4. `distE/` has optimalized Express.js version of the project
+    1. There is no `distE` version of the Express.js version since it uses already minified images and styles. Other files (.pug, .js) are not minified since the project is not very large.
 
 ## How to run
 ###  1. Vanilla version
