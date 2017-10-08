@@ -28,7 +28,7 @@ const options = {
 // ====== For Vanilla v. ======
 
 gulp.task('inlineSource',["useref"],function(){
-    return gulp.src(options.dist+'/index.html')
+    return gulp.src(options.dist+'/*.html')
         .pipe(inlineSource())
         .pipe(gulp.dest(options.dist));
 });
