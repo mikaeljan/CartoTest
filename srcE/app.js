@@ -24,6 +24,17 @@ app.get("/tutorial", (req, res)=> {
         title: "Tutorial"
     });
 });
+// Simple error handling if an user types a route which is not yet implemented
+app.use((req, res, next) => {
+    const err = new Error("Oops!!! We are unable to fetch the site you requested. We apologize for the inconvenience.");
+    err.status = 404;
+    next(err);
+});
+app.use((err,req,res, next)=>{
+    res.locals.error = err;
+    res.status(err.status);
+    res.render('error');
+});
 
 app.listen(3000, ()=>{
     console.log("The application is running on localhost:3000!");
