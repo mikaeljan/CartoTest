@@ -176,9 +176,9 @@ nav {
   }
 }
 
-// Side navigations
+// Side navigation
 .nav--side {
-  //display:flex;
+  padding-left: 15px;
   & .nav__item {
     @include m("list") {
       display: flex;
@@ -199,4 +199,43 @@ nav {
 }
 .nav--side > .nav__item:first-child {
   margin-top:0;
+}
+.side-bar a:hover {
+  color: lighten($white, 15%);
+}
+// The side navigation menu - this will use JS
+.side-bar {
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0;
+  left: 0;
+  background-color: rgba($black, .9); /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s;
+}
+
+/* Position and style the close button (top right corner) */
+.side-bar .closebtn {
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+  color: $color--input;
+}
+.openbtn {
+  position: absolute;
+  top: 70px;
+  left: 20px;
+  cursor: pointer;
+}
+/* Hide buttons for menu handling once the screen is large enough */
+.side-bar .closebtn,
+.openbtn {
+  @include mq("tablet") {
+    display: none;
+  }
 }

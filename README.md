@@ -32,20 +32,24 @@ Note: The Express.js version will have already minified CSS provided. The origin
 1. The index.html with CODE PAGE is made as an separate .html/.pug.<br>
 However it can also be turned into an overlay of the following docs.html file instead and after clicking it, it hides and shows the page.
 
-2. Made a custom grid system in SASS, was considering using some already created online, decided against it for practicing purposes.
+2. Since it was suggested not to use jQuery I did my first take on making custom non-jQuery/JS hamburger menu (the one in the header) with only CSS.<br>
+The side bar menu in tutorial.html/.pug is using plain JS and after a consultation with someone more experienced I would choose the CSS version or JS.
 
-3. SVGs are inline in order to save requests to the server. Same goes for the Vanilla's CSS style after optimization.<br>
+3. Made a custom grid system in SASS, was considering using some already created online, decided against it for practicing purposes.
 
-4. Since it was suggested not use jQuery I did my first take on making custom non-jQuery/JS hamburger menu with only CSS.
-<br>Might use a Vanilla JS for this next time.
+4. SVGs are inline in order to save requests to the server. Same goes for the Vanilla's CSS style after optimization.<br>
+
+5. I would speak with the designer team to discuss how would they like to have side bar navigation menu handled in mobile sizes.<br>
+While the workings of the header menu seems ok, the workings of a side bar menu is in question (push the content away/overlaps the content, where in the overlay would it be located?)
 
 
-## Further implementation
+
+## Further implementations
 1. Add JS to implement menus interactions (dropdowns etc.). Use JS for toggling classes (hidden menu/shown menu. Not really a fan of just CSS way of handling this).
 
 2. In Express.js implement error handling (wrong /route would show basic template with error layout ) 
 
-3. Use another MVC framework for a more dynamic site.
+3. Use another MVC framework (Vue,Backbone,KO...) for a site with more dynamic flow.
 
 ## Contact
 For any questions, please feel free to contact me:<br />

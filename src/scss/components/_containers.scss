@@ -29,6 +29,10 @@
   margin-bottom: em(40px);
 }
 .side-bar {
-  margin-right:em(25px);
-  min-width: 210px;
+  @include mq("tablet"){
+    min-width: 260px;
+    position: relative;
+    background-color: $color--bg;
+    padding-top: 0;
+  }
 }

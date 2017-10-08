@@ -677,13 +677,15 @@ header {
     .nav--sec .nav__item:last-child {
       margin-right: 0; }
 
-.nav--side .nav__item--list {
-  display: flex;
-  flex-direction: column; }
-  .nav--side .nav__item--list svg {
-    margin-right: 10px; }
-  .nav--side .nav__item--list .nav__item--list {
-    margin-left: 25px; }
+.nav--side {
+  padding-left: 15px; }
+  .nav--side .nav__item--list {
+    display: flex;
+    flex-direction: column; }
+    .nav--side .nav__item--list svg {
+      margin-right: 10px; }
+    .nav--side .nav__item--list .nav__item--list {
+      margin-left: 25px; }
 
 .nav--side > .nav__item {
   margin-top: 10px;
@@ -691,6 +693,49 @@ header {
 
 .nav--side > .nav__item:first-child {
   margin-top: 0; }
+
+.side-bar a:hover {
+  color: white; }
+
+.side-bar {
+  height: 100%;
+  /* 100% Full-height */
+  width: 0;
+  /* 0 width - change this with JavaScript */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Stay on top */
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.9);
+  /* Black*/
+  overflow-x: hidden;
+  /* Disable horizontal scroll */
+  padding-top: 60px;
+  /* Place content 60px from the top */
+  transition: 0.5s; }
+
+/* Position and style the close button (top right corner) */
+.side-bar .closebtn {
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+  color: #B1B8C1; }
+
+.openbtn {
+  position: absolute;
+  top: 70px;
+  left: 20px;
+  cursor: pointer; }
+
+/* Hide buttons for menu handling once the screen is large enough */
+@media (min-width: 768px) {
+  .side-bar .closebtn,
+  .openbtn {
+    display: none; } }
 
 .dark {
   background-color: #162745; }
@@ -714,9 +759,12 @@ header {
 .main__section {
   margin-bottom: 2.2222222222em; }
 
-.side-bar {
-  margin-right: 1.3888888889em;
-  min-width: 210px; }
+@media (min-width: 768px) {
+  .side-bar {
+    min-width: 260px;
+    position: relative;
+    background-color: #fff;
+    padding-top: 0; } }
 
 .grid__col--1 {
   flex-basis: 8%;
