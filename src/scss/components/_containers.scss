@@ -29,9 +29,9 @@
   margin-bottom: em(40px);
 }
 .side-bar {
-  @include mq("tablet"){
+  @include mq("tablet"){ // This will manifest when the screen enlarges
     min-width: 260px;
-    position: relative;
+    position: relative; // The side bar will no longer stretch across the height of the screen
     background-color: $color--bg;
     padding-top: 0;
   }

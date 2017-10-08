@@ -696,6 +696,9 @@ header {
 
 .side-bar a:hover {
   color: white; }
+  @media (min-width: 768px) {
+    .side-bar a:hover {
+      color: inherit; } }
 
 .side-bar {
   height: 100%;
@@ -735,6 +738,7 @@ header {
 @media (min-width: 768px) {
   .side-bar .closebtn,
   .openbtn {
+    font-size: 26px;
     display: none; } }
 
 .dark {

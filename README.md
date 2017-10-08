@@ -33,7 +33,7 @@ Note: The Express.js version will have already minified CSS provided. The origin
 However it can also be turned into an overlay of the following docs.html file instead and after clicking it, it hides and shows the page.
 
 2. Since it was suggested not to use jQuery I did my first take on making custom non-jQuery/JS hamburger menu (the one in the header) with only CSS.<br>
-The side bar menu in tutorial.html/.pug is using plain JS and after a consultation with someone more experienced I would choose the CSS version or JS.
+The side bar menu in tutorial.html/.pug is using plain JS and after a consultation with someone more experienced I would choose the CSS version OR JS.
 
 3. Made a custom grid system in SASS, was considering using some already created online, decided against it for practicing purposes.
 

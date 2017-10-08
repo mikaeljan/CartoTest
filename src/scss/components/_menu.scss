@@ -202,6 +202,9 @@ nav {
 }
 .side-bar a:hover {
   color: lighten($white, 15%);
+  @include mq("tablet") {
+    color: inherit;
+  }
 }
 // The side navigation menu - this will use JS
 .side-bar {
@@ -236,6 +239,7 @@ nav {
 .side-bar .closebtn,
 .openbtn {
   @include mq("tablet") {
+    font-size: $font-size--lg;
     display: none;
   }
 }
