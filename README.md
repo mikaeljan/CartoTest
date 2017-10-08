@@ -20,7 +20,7 @@ For running Vanilla version: simply open index.html in `src/` or `dist/`.
 
 ### 2. Express.js version 
 For running Express.js version, please make sure you have [NodeJS](https://nodejs.org/) installed.
-1. Open command line and navigate  either to the `srcE/` directory and run `npm install` then `node app`.<br/>
+1. Open command line and navigate to the `srcE/` directory and run `npm install` then `node app`.<br/>
 2. The server should run on port 3000.
 3. Open your browser's [localhost](localhost:3000).
 
