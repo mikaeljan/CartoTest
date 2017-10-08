@@ -24,10 +24,10 @@ For running Express.js version, please make sure you have [NodeJS](https://nodej
 2. The server should run on port 3000.
 3. Open your browser's [localhost](localhost:3000).
 4. Routes accessible
-    1. / (/index)
+    1. /
     2. /docs
     3. /tutorial
-    4. If you type any other url the error handler will...handle it.
+    4. If you type any other url the error handler will...handle it in a more user-friendly way.
     
 Note: The Express.js version will have already minified CSS provided. The original CSS/SASS files can be found in Vanilla's `src` folder.
 
