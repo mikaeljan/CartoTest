@@ -36,15 +36,16 @@ However it can also be turned into an overlay of the following docs.html file in
 
 3. SVGs are inline in order to save requests to the server. Same goes for the Vanilla's CSS style after optimization.<br>
 
-4. Since it was suggested not use jQuery I did my first take on making custom non-jQuery/JS hamburger menu with only CSS. The result was clumsy and very specific to this navigation, took a lot of experimenting and custom styling.
+4. Since it was suggested not use jQuery I did my first take on making custom non-jQuery/JS hamburger menu with only CSS.
 <br>Might use a Vanilla JS for this next time.
 
 
-## To Add
-1. Add JS to implement menus interactions (dropdowns etc.)
+## Further implementation
+1. Add JS to implement menus interactions (dropdowns etc.). Use JS for toggling classes (hidden menu/shown menu. Not really a fan of just CSS way of handling this).
 
-2. In Express.js implement error handling (wrong /route would show basic template with layout ) 
+2. In Express.js implement error handling (wrong /route would show basic template with error layout ) 
 
+3. Use another MVC framework for a more dynamic site.
 
 ## Contact
 For any questions, please feel free to contact me:<br />
