@@ -23,7 +23,12 @@ For running Express.js version, please make sure you have [NodeJS](https://nodej
 1. Open command line and navigate to the `srcE/` directory and run `npm install` then `node app`.<br/>
 2. The server should run on port 3000.
 3. Open your browser's [localhost](localhost:3000).
-
+4. Routes accessible
+    1. / (/index)
+    2. /docs
+    3. /tutorial
+    4. If you type any other url the error handler will...handle it.
+    
 Note: The Express.js version will have already minified CSS provided. The original CSS/SASS files can be found in Vanilla's `src` folder.
 
 
@@ -42,14 +47,12 @@ The side bar menu in tutorial.html/.pug is using plain JS and after a consultati
 5. I would speak with the designer team to discuss how would they like to have side bar navigation menu handled in mobile sizes.<br>
 While the workings of the header menu seems ok, the workings of a side bar menu is in question (push the content away/overlaps the content, where in the overlay would it be located?)
 
-
+6. Express.js supports error handling if you access an non-accessible link (e.g. 404)
 
 ## Further implementations
 1. Add JS to implement menus interactions (dropdowns etc.). Use JS for toggling classes (hidden menu/shown menu. Not really a fan of just CSS way of handling this).
 
-2. In Express.js implement error handling (wrong /route would show basic template with error layout ) 
-
-3. Use another MVC framework (Vue,Backbone,KO...) for a site with more dynamic flow.
+2. Use another MVC framework (Vue,Backbone,KO...) for a site with more dynamic flow.
 
 ## Contact
 For any questions, please feel free to contact me:<br />
