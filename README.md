@@ -27,7 +27,7 @@ For running Express.js version, please make sure you have [NodeJS](https://nodej
     1. /
     2. /docs
     3. /tutorial
-    4. If you type any other url the error handler will...handle it in a more user-friendly way.
+    4. If you type any other url or access the links which have no endpoint implemented, the error handler will...handle it in a more user-friendly way.
     
 Note: The Express.js version will have already minified CSS provided. The original CSS/SASS files can be found in Vanilla's `src` folder.
 
