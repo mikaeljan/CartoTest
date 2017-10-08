@@ -5,7 +5,7 @@ Two versions of my take on Code Test from CARTO
 - Express JS version
 
 
-(Normally I would create two branches or even two sep. projects but I feel this is still within limits. If the project was larger I would divide it.)
+(Normally, I would create two branches or even two sep. projects but I feel this is still within limits. If the project was larger I would divide it.)
 
 ## File structure:
 1. `src/` has all the files I used for building the project from scratch - not optimalized
@@ -29,7 +29,7 @@ Note: The Express.js version will have already minified CSS provided. The origin
 
 
 ### Notes during Code Test
-1. The index.html with CODE PAGE is made as an separate .html.<br>
+1. The index.html with CODE PAGE is made as an separate .html/.pug.<br>
 However it can also be turned into an overlay of the following docs.html file instead and after clicking it, it hides and shows the page.
 
 2. Made a custom grid system in SASS, was considering using some already created online, decided against it for practicing purposes.
